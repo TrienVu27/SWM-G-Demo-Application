@@ -63,10 +63,20 @@ namespace BasicMotionSample.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap logo {
+        internal static System.Drawing.Bitmap ME_Logo {
             get {
-                object obj = ResourceManager.GetObject("logo", resourceCulture);
+                object obj = ResourceManager.GetObject("ME_Logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon ME_Logo_Short {
+            get {
+                object obj = ResourceManager.GetObject("ME_Logo_Short", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
     }

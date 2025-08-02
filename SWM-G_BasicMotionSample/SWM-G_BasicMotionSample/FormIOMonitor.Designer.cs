@@ -40,7 +40,6 @@ namespace BasicMotionSample
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormIOMonitor";
-            this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Load += new System.EventHandler(this.FormIOMonitor_Load);
             this.ResumeLayout(false);
