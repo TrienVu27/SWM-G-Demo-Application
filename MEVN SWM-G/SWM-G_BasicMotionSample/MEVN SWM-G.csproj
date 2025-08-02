@@ -79,11 +79,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormMultiMotionControl.cs">
+    <Compile Include="FormMultiMotionCtrl.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMultiMotionControl.Designer.cs">
-      <DependentUpon>FormMultiMotionControl.cs</DependentUpon>
+    <Compile Include="FormMultiMotionCtrl.Designer.cs">
+      <DependentUpon>FormMultiMotionCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlarmMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlarmMonitor.Designer.cs">
+      <DependentUpon>FormAlarmMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSyncMotionControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSyncMotionControl.Designer.cs">
+      <DependentUpon>FormSyncMotionControl.cs</DependentUpon>
     </Compile>
     <Compile Include="FormIOMonitor.cs">
       <SubType>Form</SubType>
@@ -141,6 +153,9 @@
     <Compile Include="SSCApiSdoControl.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAlarmMonitor.resx">
+      <DependentUpon>FormAlarmMonitor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormIOMonitor.resx">
       <DependentUpon>FormIOMonitor.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,8 +170,11 @@
     <EmbeddedResource Include="FormMotionControl.resx">
       <DependentUpon>FormMotionControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMultiMotionControl.resx">
-      <DependentUpon>FormMultiMotionControl.cs</DependentUpon>
+    <EmbeddedResource Include="FormMultiMotionCtrl.resx">
+      <DependentUpon>FormMultiMotionCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSyncMotionControl.resx">
+      <DependentUpon>FormSyncMotionControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSdoReadWrite.resx">
       <DependentUpon>FormSdoReadWrite.cs</DependentUpon>

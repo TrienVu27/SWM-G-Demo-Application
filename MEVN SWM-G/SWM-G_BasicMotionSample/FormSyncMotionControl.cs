@@ -24,7 +24,7 @@ namespace BasicMotionSample
         public int axis;
         public stPointData[] pointData;
     }
-    public partial class FormMultiMotionControl : Form
+    public partial class FormSyncMotionControl : Form
     {
         //----------------------------------------------------------------
         // Constant
@@ -60,7 +60,7 @@ namespace BasicMotionSample
         //----------------------------------------------
         int Axis_Master = 0;
 
-        public FormMultiMotionControl()
+        public FormSyncMotionControl()
         {
             InitializeComponent();
             DelegateUpdateControl = new UpdateControl(MethodUpdateControl);
@@ -303,7 +303,7 @@ namespace BasicMotionSample
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonAllServoON_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < MaxMonitorAxes; i++)
             {
@@ -311,7 +311,7 @@ namespace BasicMotionSample
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonAllServoOFF_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < MaxMonitorAxes; i++)
             {

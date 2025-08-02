@@ -347,9 +347,9 @@ namespace BasicMotionSample
             return (ErrorCode.None == nError);
         }
 
-        private void buttonMultiMotionContiCtrl_Click(object sender, EventArgs e)
+        private void buttonSyncMotionCtrl_Click(object sender, EventArgs e)
         {
-            FormMultiMotionControl myform = new FormMultiMotionControl();
+            FormSyncMotionControl myform = new FormSyncMotionControl();
             myform.Show();
         }
 
@@ -359,14 +359,16 @@ namespace BasicMotionSample
             myform.Show();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void buttonAlarmMonitor_Click(object sender, EventArgs e)
         {
-
+            FormAlarmMonitor myform = new FormAlarmMonitor();
+            myform.Show();
         }
 
-        private void pictureBox1_Click_1(object sender, EventArgs e)
+        private void buttonMultiMotionCtrl_Click(object sender, EventArgs e)
         {
-
+            FormMultiMotionCtrl myform = new FormMultiMotionCtrl();
+            myform.Show();
         }
     }
 }

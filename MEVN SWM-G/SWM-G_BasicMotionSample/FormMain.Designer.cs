@@ -37,9 +37,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.buttonIOMonitor = new System.Windows.Forms.Button();
+            this.buttonAlarmMonitor = new System.Windows.Forms.Button();
             this.buttonAxesMonitor = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.buttonMultiMotionContiCtrl = new System.Windows.Forms.Button();
+            this.buttonMultiMotionCtrl = new System.Windows.Forms.Button();
+            this.buttonSyncMotionCtrl = new System.Windows.Forms.Button();
             this.buttonMotionContiCtrl = new System.Windows.Forms.Button();
             this.buttonMotionCtrl = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -116,12 +118,13 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.buttonIOMonitor);
+            this.groupBox2.Controls.Add(this.buttonAlarmMonitor);
             this.groupBox2.Controls.Add(this.buttonAxesMonitor);
             this.groupBox2.Location = new System.Drawing.Point(20, 258);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(455, 70);
+            this.groupBox2.Size = new System.Drawing.Size(455, 106);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Monitor";
@@ -137,6 +140,17 @@
             this.buttonIOMonitor.UseVisualStyleBackColor = true;
             this.buttonIOMonitor.Click += new System.EventHandler(this.buttonIOMonitor_Click);
             // 
+            // buttonAlarmMonitor
+            // 
+            this.buttonAlarmMonitor.Location = new System.Drawing.Point(231, 64);
+            this.buttonAlarmMonitor.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonAlarmMonitor.Name = "buttonAlarmMonitor";
+            this.buttonAlarmMonitor.Size = new System.Drawing.Size(213, 30);
+            this.buttonAlarmMonitor.TabIndex = 0;
+            this.buttonAlarmMonitor.Text = "Alarm Monitor";
+            this.buttonAlarmMonitor.UseVisualStyleBackColor = true;
+            this.buttonAlarmMonitor.Click += new System.EventHandler(this.buttonAlarmMonitor_Click);
+            // 
             // buttonAxesMonitor
             // 
             this.buttonAxesMonitor.Location = new System.Drawing.Point(9, 26);
@@ -150,10 +164,11 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.buttonMultiMotionContiCtrl);
+            this.groupBox3.Controls.Add(this.buttonMultiMotionCtrl);
+            this.groupBox3.Controls.Add(this.buttonSyncMotionCtrl);
             this.groupBox3.Controls.Add(this.buttonMotionContiCtrl);
             this.groupBox3.Controls.Add(this.buttonMotionCtrl);
-            this.groupBox3.Location = new System.Drawing.Point(20, 337);
+            this.groupBox3.Location = new System.Drawing.Point(20, 370);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
@@ -162,16 +177,27 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Positioning Control/JOG Operation ";
             // 
-            // buttonMultiMotionContiCtrl
+            // buttonMultiMotionCtrl
             // 
-            this.buttonMultiMotionContiCtrl.Location = new System.Drawing.Point(231, 70);
-            this.buttonMultiMotionContiCtrl.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonMultiMotionContiCtrl.Name = "buttonMultiMotionContiCtrl";
-            this.buttonMultiMotionContiCtrl.Size = new System.Drawing.Size(215, 30);
-            this.buttonMultiMotionContiCtrl.TabIndex = 2;
-            this.buttonMultiMotionContiCtrl.Text = "Sync Control";
-            this.buttonMultiMotionContiCtrl.UseVisualStyleBackColor = true;
-            this.buttonMultiMotionContiCtrl.Click += new System.EventHandler(this.buttonMultiMotionContiCtrl_Click);
+            this.buttonMultiMotionCtrl.Location = new System.Drawing.Point(9, 70);
+            this.buttonMultiMotionCtrl.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonMultiMotionCtrl.Name = "buttonMultiMotionCtrl";
+            this.buttonMultiMotionCtrl.Size = new System.Drawing.Size(213, 30);
+            this.buttonMultiMotionCtrl.TabIndex = 3;
+            this.buttonMultiMotionCtrl.Text = "Multi Axis Pos./JOG";
+            this.buttonMultiMotionCtrl.UseVisualStyleBackColor = true;
+            this.buttonMultiMotionCtrl.Click += new System.EventHandler(this.buttonMultiMotionCtrl_Click);
+            // 
+            // buttonSyncMotionCtrl
+            // 
+            this.buttonSyncMotionCtrl.Location = new System.Drawing.Point(231, 70);
+            this.buttonSyncMotionCtrl.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonSyncMotionCtrl.Name = "buttonSyncMotionCtrl";
+            this.buttonSyncMotionCtrl.Size = new System.Drawing.Size(215, 30);
+            this.buttonSyncMotionCtrl.TabIndex = 2;
+            this.buttonSyncMotionCtrl.Text = "Sync Control";
+            this.buttonSyncMotionCtrl.UseVisualStyleBackColor = true;
+            this.buttonSyncMotionCtrl.Click += new System.EventHandler(this.buttonSyncMotionCtrl_Click);
             // 
             // buttonMotionContiCtrl
             // 
@@ -199,7 +225,7 @@
             // 
             this.groupBox4.Controls.Add(this.buttonSdoBatch);
             this.groupBox4.Controls.Add(this.buttonSdoRW);
-            this.groupBox4.Location = new System.Drawing.Point(20, 462);
+            this.groupBox4.Location = new System.Drawing.Point(20, 495);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
@@ -232,7 +258,7 @@
             // 
             // buttonClose
             // 
-            this.buttonClose.Location = new System.Drawing.Point(289, 542);
+            this.buttonClose.Location = new System.Drawing.Point(288, 573);
             this.buttonClose.Margin = new System.Windows.Forms.Padding(4);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(187, 30);
@@ -256,13 +282,12 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(487, 587);
+            this.ClientSize = new System.Drawing.Size(488, 612);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.groupBox4);
@@ -305,9 +330,11 @@
         private System.Windows.Forms.Button buttonSdoRW;
         private System.Windows.Forms.Button buttonClose;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button buttonMultiMotionContiCtrl;
+        private System.Windows.Forms.Button buttonSyncMotionCtrl;
         private System.Windows.Forms.Button buttonIOMonitor;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button buttonMultiMotionCtrl;
+        private System.Windows.Forms.Button buttonAlarmMonitor;
     }
 }
 
