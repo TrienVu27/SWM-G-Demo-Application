@@ -74,7 +74,7 @@ namespace BasicMotionSample
             {   //formCount : 1 - 5
                 if (CreateSSCApiObject())
                 {
-                    if (sscApiAxesMonitor.CreateDevice()&& sscApiMotionCtrl.CreateDevice())
+                    if (sscApiAxesMonitor.CreateDevice() && sscApiMotionCtrl.CreateDevice())
                     {
                         //-------------------------------------------------
                         //Initial controls.
@@ -190,20 +190,21 @@ namespace BasicMotionSample
         //----------------------------------------------------------------
         private void UpdateAxesMonitor(int row, ref CoreMotionAxisStatus axisStatus)
         {
-            //dataGridView//
-            dataGridView[1, row].Value = ((row == comboBox1.SelectedIndex) && !axisStatus.ServoOffline) ? "Master" : (axisStatus.ServoOffline) ? "Offline" : (axisStatus.OpState.ToString() == "Sync") ? "Sync" : "No Sync";
-            dataGridView[1, row].Style.BackColor = ((row == comboBox1.SelectedIndex) && !axisStatus.ServoOffline) ? Color.White : (axisStatus.ServoOffline) ? Color.Gray : (dataGridView[1, row].Value.ToString() != "Sync") ? Color.Red : Color.Green;
-            dataGridView[1, row].Style.ForeColor = ((row == comboBox1.SelectedIndex) && !axisStatus.ServoOffline) ? Color.Black : (axisStatus.ServoOffline) ? Color.DarkGray : (dataGridView[1, row].Value.ToString() != "Sync") ? Color.Yellow : Color.LightSkyBlue;
-            dataGridView[2, row].Value = ((row == comboBox1.SelectedIndex) && !axisStatus.ServoOffline) ? "Master" : (axisStatus.ServoOffline) ? "" : (dataGridView[1, row].Value.ToString() != "Sync") ? "Enable" : "Disable";
-            Axis_Master = ((row == comboBox1.SelectedIndex) && !axisStatus.ServoOffline) ? row : Axis_Master;
 
-            if (dataGridView[1, row].Value.ToString() == "Sync")
-            {//Sync
-                comboBox1.Enabled = false;
-            }
-            if ((row == comboBox1.SelectedIndex) && axisStatus.ServoOffline)
+            //dataGridView//
+            bool bRet = Int32.TryParse(comboBox1.Text, out int dataGridView1Selected);
+
+            dataGridView[1, row].Value = (bRet && (row == dataGridView1Selected) && !axisStatus.ServoOffline) ? "Master" : (axisStatus.ServoOffline) ? "Offline" : (axisStatus.OpState.ToString() == "Sync") ? "Sync" : "No Sync";
+            dataGridView[1, row].Style.BackColor = (bRet && (row == dataGridView1Selected) && !axisStatus.ServoOffline) ? Color.White : (axisStatus.ServoOffline) ? Color.Gray : (dataGridView[1, row].Value.ToString() != "Sync") ? Color.Red : Color.Green;
+            dataGridView[1, row].Style.ForeColor = (bRet && (row == dataGridView1Selected) && !axisStatus.ServoOffline) ? Color.Black : (axisStatus.ServoOffline) ? Color.DarkGray : (dataGridView[1, row].Value.ToString() != "Sync") ? Color.Yellow : Color.LightSkyBlue;
+            dataGridView[2, row].Value = (bRet && (row == dataGridView1Selected) && !axisStatus.ServoOffline) ? "Master" : (axisStatus.ServoOffline) ? "" : (dataGridView[1, row].Value.ToString() != "Sync") ? "Enable" : "Disable";
+            
+            Axis_Master = (bRet && (row == dataGridView1Selected) && !axisStatus.ServoOffline) ? row : Axis_Master;
+            
+            if (bRet && (row == dataGridView1Selected) && axisStatus.ServoOffline)
             {
                 MessageBox.Show("Master axis is offline! Please select another axis");
+                comboBox1.SelectedIndex = 0;
             }
 
             //dataGridView3//
@@ -230,10 +231,7 @@ namespace BasicMotionSample
         {
             for (int j = 0; j < MaxMonitorAxes; j++)
             {
-                if (Axis_Master != j)
-                {
-                    sscLib_cm.Sync.SetSyncMasterSlave(Axis_Master, j);
-                }
+                int bRet = (Axis_Master != j) ? sscLib_cm.Sync.SetSyncMasterSlave(Axis_Master, j) : 0;
             }
             bEnable = true;
         }
@@ -248,7 +246,6 @@ namespace BasicMotionSample
                 for (int i = 0; i < MaxMonitorAxes; i++)
                 {
                     UpdateAxesMonitor(i, ref axisStatus[i]);
-                    
                 }              
                 timerMonitor.Enabled = true;
                 if (bEnable)
@@ -281,10 +278,7 @@ namespace BasicMotionSample
             
             for (int i = 0; i < MaxMonitorAxes; i++)
             {
-                if (Axis_Master != i)
-                {
-                    sscLib_cm.Sync.ResolveSync(i);
-                }
+                int bRet = (Axis_Master != i) ? sscLib_cm.Sync.ResolveSync(i) : 0;
             }
             bEnable = true;
         }
@@ -350,20 +344,10 @@ namespace BasicMotionSample
 
         private void buttonPause_Click(object sender, EventArgs e)
         {
-            if (bPause)
-            {
-                sscLib_cm.Motion.Resume(Axis_Master);
-                bPause = false;
-                buttonPause.Text = "Pause";
-                buttonPause.BackColor = Color.White;
-            }
-            else
-            {
-                sscLib_cm.Motion.Pause(Axis_Master);
-                bPause = true;
-                buttonPause.Text = "Resume";
-                buttonPause.BackColor = Color.LightGreen;
-            }
+            int bRet = bPause ? sscLib_cm.Motion.Resume(Axis_Master): sscLib_cm.Motion.Pause(Axis_Master);
+            buttonPause.Text = bPause ? "Pause" : "Resume";
+            buttonPause.BackColor = bPause ? Color.White : Color.LightGreen;
+            bPause = !bPause;
         }
 
         private void buttonStart_Click(object sender, EventArgs e)
@@ -557,8 +541,7 @@ namespace BasicMotionSample
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int selectedIndex;
-            bool bCheckRet = Int32.TryParse(comboBox2.SelectedIndex.ToString(), out selectedIndex);
+            bool bCheckRet = Int32.TryParse(comboBox2.SelectedIndex.ToString(), out int selectedIndex);
             if (bCheckRet)
             {
                 PosPoint = selectedIndex + 1;
