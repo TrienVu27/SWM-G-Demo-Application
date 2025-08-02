@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F6A65D8-7CCC-4DC3-AFE1-84EA75CA895A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BasicMotionSample</RootNamespace>
+    <AssemblyName>SWM-G_BasicMotionSample</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>$(SolutionDir)\ReleaseFiles\x64\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>$(SolutionDir)\ReleaseFiles\x64\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>$(SolutionDir)\ReleaseFiles\x86\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>$(SolutionDir)\ReleaseFiles\x86\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CCLinkApi_CLRLib">
+      <HintPath Condition="'$(PlatformTarget)' == 'x64'">$(SWM-G)\Lib\CCLinkApi_CLRLib.dll</HintPath>
+      <HintPath Condition="'$(PlatformTarget)' == 'x86'">$(SWM-G)\Lib\x86\CCLinkApi_CLRLib.dll</HintPath>
+    </Reference>
+    <Reference Include="CoreMotionApi_CLRLib">
+      <HintPath Condition="'$(PlatformTarget)' == 'x64'">$(SWM-G)\Lib\CoreMotionApi_CLRLib.dll</HintPath>
+      <HintPath Condition="'$(PlatformTarget)' == 'x86'">$(SWM-G)\Lib\x86\CoreMotionApi_CLRLib.dll</HintPath>
+    </Reference>
+    <Reference Include="SSCApi_CLRLib">
+      <HintPath Condition="'$(PlatformTarget)' == 'x64'">$(SWM-G)\Lib\SSCApi_CLRLib.dll</HintPath>
+      <HintPath Condition="'$(PlatformTarget)' == 'x86'">$(SWM-G)\Lib\x86\SSCApi_CLRLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormMultiMotionControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMultiMotionControl.Designer.cs">
+      <DependentUpon>FormMultiMotionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIOMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIOMonitor.Designer.cs">
+      <DependentUpon>FormIOMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SampleComFunc.cs" />
+    <Compile Include="SampleConstants.cs" />
+    <Compile Include="FormSdoBatchReadWrite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSdoBatchReadWrite.Designer.cs">
+      <DependentUpon>FormSdoBatchReadWrite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSdoReadWrite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSdoReadWrite.Designer.cs">
+      <DependentUpon>FormSdoReadWrite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMotionControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMotionControl.Designer.cs">
+      <DependentUpon>FormMotionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMotionContiControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMotionContiControl.Designer.cs">
+      <DependentUpon>FormMotionContiControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAxesMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAxesMonitor.Designer.cs">
+      <DependentUpon>FormAxesMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SSCApiBase.cs" />
+    <Compile Include="SSCApiControlForThreads.cs" />
+    <Compile Include="SSCApiControl.cs" />
+    <Compile Include="SSCApiAxesMonitor.cs" />
+    <Compile Include="SSCApiSdoControl.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormIOMonitor.resx">
+      <DependentUpon>FormIOMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAxesMonitor.resx">
+      <DependentUpon>FormAxesMonitor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMotionControl.resx">
+      <DependentUpon>FormMotionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMultiMotionControl.resx">
+      <DependentUpon>FormMultiMotionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSdoReadWrite.resx">
+      <DependentUpon>FormSdoReadWrite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSdoBatchReadWrite.resx">
+      <DependentUpon>FormSdoBatchReadWrite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMotionContiControl.resx">
+      <DependentUpon>FormMotionContiControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ME_Logo_Short.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ME_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ME_Logo_Short.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if "$(PlatformName)" == "x86" (
+    if exist "$(SWM-G)\Lib\x86\" (
+        copy /Y "$(SWM-G)\Lib\x86\IMDll.dll" "$(TargetDir)"
+    ) else (
+        copy /Y "$(SWM-G)\Lib\IMDll.dll" "$(TargetDir)"
+    )
+) else if "$(PlatformName)" == "x64" (
+    copy /Y "$(SWM-G)\Lib\IMDll.dll" "$(TargetDir)"
+)</PostBuildEvent>
+  </PropertyGroup>
+</Project>

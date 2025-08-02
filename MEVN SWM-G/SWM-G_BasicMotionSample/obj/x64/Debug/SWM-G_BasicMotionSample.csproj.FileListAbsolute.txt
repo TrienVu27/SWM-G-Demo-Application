@@ -1,0 +1,105 @@
+C:\Users\MEVN\Downloads\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\ReleaseFiles\x64\SWM-G_BasicMotionSample.exe.config
+C:\Users\MEVN\Downloads\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\ReleaseFiles\x64\SWM-G_BasicMotionSample.exe
+C:\Users\MEVN\Downloads\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\ReleaseFiles\x64\SWM-G_BasicMotionSample.pdb
+C:\Users\MEVN\Downloads\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormIOMonitor.resources
+C:\Users\MEVN\Downloads\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMain.resources
+C:\Users\MEVN\Downloads\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormAxesMonitor.resources
+C:\Users\MEVN\Downloads\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMotionControl.resources
+C:\Users\MEVN\Downloads\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMultiMotionControl.resources
+C:\Users\MEVN\Downloads\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormSdoReadWrite.resources
+C:\Users\MEVN\Downloads\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormSdoBatchReadWrite.resources
+C:\Users\MEVN\Downloads\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMotionContiControl.resources
+C:\Users\MEVN\Downloads\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.Properties.Resources.resources
+C:\Users\MEVN\Downloads\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.csproj.GenerateResource.cache
+C:\Users\MEVN\Downloads\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.csproj.CoreCompileInputs.cache
+C:\Users\MEVN\Downloads\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.csproj.CopyComplete
+C:\Users\MEVN\Downloads\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.exe
+C:\Users\MEVN\Downloads\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.pdb
+C:\Users\MEVN\Downloads\MEVN-SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\ReleaseFiles\x64\SWM-G_BasicMotionSample.exe.config
+C:\Users\MEVN\Downloads\MEVN-SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\ReleaseFiles\x64\SWM-G_BasicMotionSample.exe
+C:\Users\MEVN\Downloads\MEVN-SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\ReleaseFiles\x64\SWM-G_BasicMotionSample.pdb
+C:\Users\MEVN\Downloads\MEVN-SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormIOMonitor.resources
+C:\Users\MEVN\Downloads\MEVN-SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMain.resources
+C:\Users\MEVN\Downloads\MEVN-SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormAxesMonitor.resources
+C:\Users\MEVN\Downloads\MEVN-SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMotionControl.resources
+C:\Users\MEVN\Downloads\MEVN-SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMultiMotionControl.resources
+C:\Users\MEVN\Downloads\MEVN-SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormSdoReadWrite.resources
+C:\Users\MEVN\Downloads\MEVN-SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormSdoBatchReadWrite.resources
+C:\Users\MEVN\Downloads\MEVN-SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMotionContiControl.resources
+C:\Users\MEVN\Downloads\MEVN-SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.Properties.Resources.resources
+C:\Users\MEVN\Downloads\MEVN-SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.csproj.GenerateResource.cache
+C:\Users\MEVN\Downloads\MEVN-SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.csproj.CoreCompileInputs.cache
+C:\Users\MEVN\Downloads\MEVN-SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.csproj.CopyComplete
+C:\Users\MEVN\Downloads\MEVN-SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.exe
+C:\Users\MEVN\Downloads\MEVN-SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.pdb
+C:\Users\MEVN\Downloads\MEVN-SWM_G-Application\SWM-G_BasicMotionSample\ReleaseFiles\x64\SWM-G_BasicMotionSample.exe.config
+C:\Users\MEVN\Downloads\MEVN-SWM_G-Application\SWM-G_BasicMotionSample\ReleaseFiles\x64\SWM-G_BasicMotionSample.exe
+C:\Users\MEVN\Downloads\MEVN-SWM_G-Application\SWM-G_BasicMotionSample\ReleaseFiles\x64\SWM-G_BasicMotionSample.pdb
+C:\Users\MEVN\Downloads\MEVN-SWM_G-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.csproj.AssemblyReference.cache
+C:\Users\MEVN\Downloads\MEVN-SWM_G-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormIOMonitor.resources
+C:\Users\MEVN\Downloads\MEVN-SWM_G-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMain.resources
+C:\Users\MEVN\Downloads\MEVN-SWM_G-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormAxesMonitor.resources
+C:\Users\MEVN\Downloads\MEVN-SWM_G-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMotionControl.resources
+C:\Users\MEVN\Downloads\MEVN-SWM_G-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMultiMotionControl.resources
+C:\Users\MEVN\Downloads\MEVN-SWM_G-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormSdoReadWrite.resources
+C:\Users\MEVN\Downloads\MEVN-SWM_G-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormSdoBatchReadWrite.resources
+C:\Users\MEVN\Downloads\MEVN-SWM_G-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMotionContiControl.resources
+C:\Users\MEVN\Downloads\MEVN-SWM_G-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.Properties.Resources.resources
+C:\Users\MEVN\Downloads\MEVN-SWM_G-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.csproj.GenerateResource.cache
+C:\Users\MEVN\Downloads\MEVN-SWM_G-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.csproj.CoreCompileInputs.cache
+C:\Users\MEVN\Downloads\MEVN-SWM_G-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.csproj.CopyComplete
+C:\Users\MEVN\Downloads\MEVN-SWM_G-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.exe
+C:\Users\MEVN\Downloads\MEVN-SWM_G-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.pdb
+D:\Program\SWM-G\SWM-G-Demo-Application\SWM-G_BasicMotionSample\ReleaseFiles\x64\SWM-G_BasicMotionSample.exe.config
+D:\Program\SWM-G\SWM-G-Demo-Application\SWM-G_BasicMotionSample\ReleaseFiles\x64\SWM-G_BasicMotionSample.exe
+D:\Program\SWM-G\SWM-G-Demo-Application\SWM-G_BasicMotionSample\ReleaseFiles\x64\SWM-G_BasicMotionSample.pdb
+D:\Program\SWM-G\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.csproj.AssemblyReference.cache
+D:\Program\SWM-G\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormIOMonitor.resources
+D:\Program\SWM-G\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMain.resources
+D:\Program\SWM-G\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormAxesMonitor.resources
+D:\Program\SWM-G\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMotionControl.resources
+D:\Program\SWM-G\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMultiMotionControl.resources
+D:\Program\SWM-G\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormSdoReadWrite.resources
+D:\Program\SWM-G\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormSdoBatchReadWrite.resources
+D:\Program\SWM-G\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMotionContiControl.resources
+D:\Program\SWM-G\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.Properties.Resources.resources
+D:\Program\SWM-G\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.csproj.GenerateResource.cache
+D:\Program\SWM-G\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.csproj.CoreCompileInputs.cache
+D:\Program\SWM-G\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.csproj.CopyComplete
+D:\Program\SWM-G\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.exe
+D:\Program\SWM-G\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.pdb
+D:\New folder (2)\SWM-G-Demo-Application\SWM-G_BasicMotionSample\ReleaseFiles\x64\SWM-G_BasicMotionSample.exe.config
+D:\New folder (2)\SWM-G-Demo-Application\SWM-G_BasicMotionSample\ReleaseFiles\x64\SWM-G_BasicMotionSample.exe
+D:\New folder (2)\SWM-G-Demo-Application\SWM-G_BasicMotionSample\ReleaseFiles\x64\SWM-G_BasicMotionSample.pdb
+D:\New folder (2)\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormIOMonitor.resources
+D:\New folder (2)\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMain.resources
+D:\New folder (2)\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormAxesMonitor.resources
+D:\New folder (2)\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMotionControl.resources
+D:\New folder (2)\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMultiMotionControl.resources
+D:\New folder (2)\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormSdoReadWrite.resources
+D:\New folder (2)\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormSdoBatchReadWrite.resources
+D:\New folder (2)\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMotionContiControl.resources
+D:\New folder (2)\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.Properties.Resources.resources
+D:\New folder (2)\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.csproj.GenerateResource.cache
+D:\New folder (2)\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.csproj.CoreCompileInputs.cache
+D:\New folder (2)\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.csproj.CopyComplete
+D:\New folder (2)\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.exe
+D:\New folder (2)\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.pdb
+D:\New folder\SWM-G-Demo-Application\SWM-G_BasicMotionSample\ReleaseFiles\x64\SWM-G_BasicMotionSample.exe.config
+D:\New folder\SWM-G-Demo-Application\SWM-G_BasicMotionSample\ReleaseFiles\x64\SWM-G_BasicMotionSample.exe
+D:\New folder\SWM-G-Demo-Application\SWM-G_BasicMotionSample\ReleaseFiles\x64\SWM-G_BasicMotionSample.pdb
+D:\New folder\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.csproj.AssemblyReference.cache
+D:\New folder\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormIOMonitor.resources
+D:\New folder\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMain.resources
+D:\New folder\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormAxesMonitor.resources
+D:\New folder\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMotionControl.resources
+D:\New folder\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMultiMotionControl.resources
+D:\New folder\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormSdoReadWrite.resources
+D:\New folder\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormSdoBatchReadWrite.resources
+D:\New folder\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMotionContiControl.resources
+D:\New folder\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.Properties.Resources.resources
+D:\New folder\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.csproj.GenerateResource.cache
+D:\New folder\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.csproj.CoreCompileInputs.cache
+D:\New folder\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.csproj.CopyComplete
+D:\New folder\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.exe
+D:\New folder\SWM-G-Demo-Application\SWM-G_BasicMotionSample\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.pdb

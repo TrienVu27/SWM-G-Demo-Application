@@ -1,0 +1,17 @@
+D:\New folder\SWM-G-Demo-Application\MEVN SWM-G\ReleaseFiles\x64\SWM-G_BasicMotionSample.exe.config
+D:\New folder\SWM-G-Demo-Application\MEVN SWM-G\ReleaseFiles\x64\SWM-G_BasicMotionSample.exe
+D:\New folder\SWM-G-Demo-Application\MEVN SWM-G\ReleaseFiles\x64\SWM-G_BasicMotionSample.pdb
+D:\New folder\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Release\BasicMotionSample.FormIOMonitor.resources
+D:\New folder\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Release\BasicMotionSample.FormMain.resources
+D:\New folder\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Release\BasicMotionSample.FormAxesMonitor.resources
+D:\New folder\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Release\BasicMotionSample.FormMotionControl.resources
+D:\New folder\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Release\BasicMotionSample.FormMultiMotionControl.resources
+D:\New folder\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Release\BasicMotionSample.FormSdoReadWrite.resources
+D:\New folder\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Release\BasicMotionSample.FormSdoBatchReadWrite.resources
+D:\New folder\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Release\BasicMotionSample.FormMotionContiControl.resources
+D:\New folder\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Release\BasicMotionSample.Properties.Resources.resources
+D:\New folder\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Release\MEVN SWM-G.csproj.GenerateResource.cache
+D:\New folder\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Release\MEVN SWM-G.csproj.CoreCompileInputs.cache
+D:\New folder\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Release\MEVN SWM-G.csproj.CopyComplete
+D:\New folder\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Release\SWM-G_BasicMotionSample.exe
+D:\New folder\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Release\SWM-G_BasicMotionSample.pdb
