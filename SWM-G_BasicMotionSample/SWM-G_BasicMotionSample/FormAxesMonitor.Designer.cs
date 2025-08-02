@@ -115,7 +115,6 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormAxesMonitor";
-            this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormAxesMonitor_FormClosed);
             this.Load += new System.EventHandler(this.FormAxesMonitor_Load);

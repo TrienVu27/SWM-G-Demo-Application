@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMotionControl));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -56,40 +57,40 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 232);
+            this.label1.Location = new System.Drawing.Point(23, 186);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 20);
+            this.label1.Size = new System.Drawing.Size(57, 17);
             this.label1.TabIndex = 4;
             this.label1.Text = "Velocity";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 273);
+            this.label2.Location = new System.Drawing.Point(23, 218);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 20);
+            this.label2.Size = new System.Drawing.Size(82, 17);
             this.label2.TabIndex = 6;
             this.label2.Text = "Accel,Decel";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 190);
+            this.label3.Location = new System.Drawing.Point(23, 152);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(153, 20);
+            this.label3.Size = new System.Drawing.Size(137, 17);
             this.label3.TabIndex = 8;
             this.label3.Text = "Target Pos/Distance";
             // 
             // textTarget
             // 
             this.textTarget.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.textTarget.Location = new System.Drawing.Point(226, 190);
-            this.textTarget.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textTarget.Location = new System.Drawing.Point(201, 152);
+            this.textTarget.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textTarget.Name = "textTarget";
-            this.textTarget.Size = new System.Drawing.Size(148, 26);
+            this.textTarget.Size = new System.Drawing.Size(132, 22);
             this.textTarget.TabIndex = 5;
             this.textTarget.Text = "10000.000";
             this.textTarget.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -99,21 +100,21 @@
             // 
             this.groupBox1.Controls.Add(this.buttonJogP);
             this.groupBox1.Controls.Add(this.buttonJogM);
-            this.groupBox1.Location = new System.Drawing.Point(9, 322);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Location = new System.Drawing.Point(8, 258);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(376, 90);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(334, 72);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "JOG operation ";
             // 
             // buttonJogP
             // 
-            this.buttonJogP.Location = new System.Drawing.Point(202, 32);
-            this.buttonJogP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonJogP.Location = new System.Drawing.Point(180, 26);
+            this.buttonJogP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonJogP.Name = "buttonJogP";
-            this.buttonJogP.Size = new System.Drawing.Size(165, 38);
+            this.buttonJogP.Size = new System.Drawing.Size(147, 30);
             this.buttonJogP.TabIndex = 1;
             this.buttonJogP.Text = "JOG(+)";
             this.buttonJogP.UseVisualStyleBackColor = true;
@@ -122,10 +123,10 @@
             // 
             // buttonJogM
             // 
-            this.buttonJogM.Location = new System.Drawing.Point(10, 32);
-            this.buttonJogM.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonJogM.Location = new System.Drawing.Point(9, 26);
+            this.buttonJogM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonJogM.Name = "buttonJogM";
-            this.buttonJogM.Size = new System.Drawing.Size(165, 38);
+            this.buttonJogM.Size = new System.Drawing.Size(147, 30);
             this.buttonJogM.TabIndex = 0;
             this.buttonJogM.Text = "JOG(-)";
             this.buttonJogM.UseVisualStyleBackColor = true;
@@ -137,21 +138,21 @@
             this.groupBox2.Controls.Add(this.buttonPause);
             this.groupBox2.Controls.Add(this.buttonAbs);
             this.groupBox2.Controls.Add(this.buttonRel);
-            this.groupBox2.Location = new System.Drawing.Point(9, 422);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox2.Location = new System.Drawing.Point(8, 338);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox2.Size = new System.Drawing.Size(376, 90);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(334, 72);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Positioning Control";
             // 
             // buttonPause
             // 
-            this.buttonPause.Location = new System.Drawing.Point(273, 30);
-            this.buttonPause.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonPause.Location = new System.Drawing.Point(243, 24);
+            this.buttonPause.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonPause.Name = "buttonPause";
-            this.buttonPause.Size = new System.Drawing.Size(94, 38);
+            this.buttonPause.Size = new System.Drawing.Size(84, 30);
             this.buttonPause.TabIndex = 2;
             this.buttonPause.Text = "Pause";
             this.buttonPause.UseVisualStyleBackColor = true;
@@ -159,10 +160,10 @@
             // 
             // buttonAbs
             // 
-            this.buttonAbs.Location = new System.Drawing.Point(135, 30);
-            this.buttonAbs.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonAbs.Location = new System.Drawing.Point(120, 24);
+            this.buttonAbs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonAbs.Name = "buttonAbs";
-            this.buttonAbs.Size = new System.Drawing.Size(116, 38);
+            this.buttonAbs.Size = new System.Drawing.Size(103, 30);
             this.buttonAbs.TabIndex = 1;
             this.buttonAbs.Text = "AbsMove";
             this.buttonAbs.UseVisualStyleBackColor = true;
@@ -170,10 +171,10 @@
             // 
             // buttonRel
             // 
-            this.buttonRel.Location = new System.Drawing.Point(10, 30);
-            this.buttonRel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonRel.Location = new System.Drawing.Point(9, 24);
+            this.buttonRel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonRel.Name = "buttonRel";
-            this.buttonRel.Size = new System.Drawing.Size(116, 38);
+            this.buttonRel.Size = new System.Drawing.Size(103, 30);
             this.buttonRel.TabIndex = 0;
             this.buttonRel.Text = "RelMove";
             this.buttonRel.UseVisualStyleBackColor = true;
@@ -181,10 +182,10 @@
             // 
             // buttonStop
             // 
-            this.buttonStop.Location = new System.Drawing.Point(18, 113);
-            this.buttonStop.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonStop.Location = new System.Drawing.Point(16, 90);
+            this.buttonStop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonStop.Name = "buttonStop";
-            this.buttonStop.Size = new System.Drawing.Size(165, 38);
+            this.buttonStop.Size = new System.Drawing.Size(147, 30);
             this.buttonStop.TabIndex = 4;
             this.buttonStop.Text = "Stop";
             this.buttonStop.UseVisualStyleBackColor = true;
@@ -192,10 +193,10 @@
             // 
             // buttonClose
             // 
-            this.buttonClose.Location = new System.Drawing.Point(178, 522);
-            this.buttonClose.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonClose.Location = new System.Drawing.Point(158, 418);
+            this.buttonClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(210, 38);
+            this.buttonClose.Size = new System.Drawing.Size(187, 30);
             this.buttonClose.TabIndex = 10;
             this.buttonClose.Text = "Close";
             this.buttonClose.UseVisualStyleBackColor = true;
@@ -204,10 +205,10 @@
             // textAxis
             // 
             this.textAxis.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.textAxis.Location = new System.Drawing.Point(86, 23);
-            this.textAxis.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textAxis.Location = new System.Drawing.Point(76, 18);
+            this.textAxis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textAxis.Name = "textAxis";
-            this.textAxis.Size = new System.Drawing.Size(54, 26);
+            this.textAxis.Size = new System.Drawing.Size(48, 22);
             this.textAxis.TabIndex = 1;
             this.textAxis.Text = "0";
             this.textAxis.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -216,19 +217,19 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 28);
+            this.label4.Location = new System.Drawing.Point(16, 22);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 20);
+            this.label4.Size = new System.Drawing.Size(33, 17);
             this.label4.TabIndex = 0;
             this.label4.Text = "Axis";
             // 
             // buttonServoON
             // 
-            this.buttonServoON.Location = new System.Drawing.Point(18, 65);
-            this.buttonServoON.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonServoON.Location = new System.Drawing.Point(16, 52);
+            this.buttonServoON.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonServoON.Name = "buttonServoON";
-            this.buttonServoON.Size = new System.Drawing.Size(165, 38);
+            this.buttonServoON.Size = new System.Drawing.Size(147, 30);
             this.buttonServoON.TabIndex = 2;
             this.buttonServoON.Text = "Servo ON";
             this.buttonServoON.UseVisualStyleBackColor = true;
@@ -236,10 +237,10 @@
             // 
             // buttonHome
             // 
-            this.buttonHome.Location = new System.Drawing.Point(226, 65);
-            this.buttonHome.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonHome.Location = new System.Drawing.Point(201, 52);
+            this.buttonHome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonHome.Name = "buttonHome";
-            this.buttonHome.Size = new System.Drawing.Size(162, 38);
+            this.buttonHome.Size = new System.Drawing.Size(144, 30);
             this.buttonHome.TabIndex = 3;
             this.buttonHome.Text = "Home";
             this.buttonHome.UseVisualStyleBackColor = true;
@@ -248,10 +249,10 @@
             // textVelocity
             // 
             this.textVelocity.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.textVelocity.Location = new System.Drawing.Point(226, 232);
-            this.textVelocity.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textVelocity.Location = new System.Drawing.Point(201, 186);
+            this.textVelocity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textVelocity.Name = "textVelocity";
-            this.textVelocity.Size = new System.Drawing.Size(148, 26);
+            this.textVelocity.Size = new System.Drawing.Size(132, 22);
             this.textVelocity.TabIndex = 6;
             this.textVelocity.Text = "10000.000";
             this.textVelocity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -260,10 +261,10 @@
             // textAccDec
             // 
             this.textAccDec.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.textAccDec.Location = new System.Drawing.Point(226, 273);
-            this.textAccDec.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textAccDec.Location = new System.Drawing.Point(201, 218);
+            this.textAccDec.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textAccDec.Name = "textAccDec";
-            this.textAccDec.Size = new System.Drawing.Size(148, 26);
+            this.textAccDec.Size = new System.Drawing.Size(132, 22);
             this.textAccDec.TabIndex = 7;
             this.textAccDec.Text = "10000.000";
             this.textAccDec.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -276,9 +277,9 @@
             // 
             // FormMotionControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(412, 578);
+            this.ClientSize = new System.Drawing.Size(366, 462);
             this.Controls.Add(this.buttonHome);
             this.Controls.Add(this.textAccDec);
             this.Controls.Add(this.textVelocity);
@@ -294,11 +295,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonServoON);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormMotionControl";
-            this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "Single axis Positioning/JOG Operation ";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormMotionControl_FormClosed);
