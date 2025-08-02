@@ -191,50 +191,29 @@ namespace BasicMotionSample
         private void UpdateAxesMonitor(int row, ref CoreMotionAxisStatus axisStatus)
         {
             //dataGridView//
-            if ((row == comboBox1.SelectedIndex) && !axisStatus.ServoOffline)
-            {
-                dataGridView[1, row].Value = "Master";
-                dataGridView[1, row].Style.BackColor = Color.White;
-                dataGridView[1, row].Style.ForeColor = Color.Black;
-                Axis_Master = row;
-                dataGridView[2, row].Value = "Master";
+            dataGridView[1, row].Value = ((row == comboBox1.SelectedIndex) && !axisStatus.ServoOffline) ? "Master" : (axisStatus.ServoOffline) ? "Offline" : (axisStatus.OpState.ToString() == "Sync") ? "Sync" : "No Sync";
+            dataGridView[1, row].Style.BackColor = ((row == comboBox1.SelectedIndex) && !axisStatus.ServoOffline) ? Color.White : (axisStatus.ServoOffline) ? Color.Gray : (dataGridView[1, row].Value.ToString() != "Sync") ? Color.Red : Color.Green;
+            dataGridView[1, row].Style.ForeColor = ((row == comboBox1.SelectedIndex) && !axisStatus.ServoOffline) ? Color.Black : (axisStatus.ServoOffline) ? Color.DarkGray : (dataGridView[1, row].Value.ToString() != "Sync") ? Color.Yellow : Color.LightSkyBlue;
+            dataGridView[2, row].Value = ((row == comboBox1.SelectedIndex) && !axisStatus.ServoOffline) ? "Master" : (axisStatus.ServoOffline) ? "" : (dataGridView[1, row].Value.ToString() != "Sync") ? "Enable" : "Disable";
+            Axis_Master = ((row == comboBox1.SelectedIndex) && !axisStatus.ServoOffline) ? row : Axis_Master;
+
+            if (dataGridView[1, row].Value.ToString() == "Sync")
+            {//Sync
+                comboBox1.Enabled = false;
             }
-            else
+            if ((row == comboBox1.SelectedIndex) && axisStatus.ServoOffline)
             {
-                if (axisStatus.ServoOffline)
-                {
-                    dataGridView[1, row].Style.BackColor = Color.Gray;
-                    dataGridView[1, row].Style.ForeColor = Color.DarkGray;
-                    dataGridView[1, row].Value = "Offline";
-                }
-                else
-                {
-                    dataGridView[1, row].Value = axisStatus.OpState;
-                    if (dataGridView[1, row].Value.ToString() != "Sync")
-                    {//NoSync
-                        dataGridView[1, row].Style.BackColor = Color.Red;
-                        dataGridView[1, row].Style.ForeColor = Color.Yellow;
-                        dataGridView[1, row].Value = "NoSync";
-                        dataGridView[2, row].Value = "Enable";
-                    }
-                    else
-                    {//Sync
-                        dataGridView[1, row].Style.BackColor = Color.Green;
-                        dataGridView[1, row].Style.ForeColor = Color.Blue;
-                        comboBox1.Enabled = false;
-                        dataGridView[2, row].Value = "Disable";
-                    }
-                } 
+                MessageBox.Show("Master axis is offline! Please select another axis");
             }
 
             //dataGridView3//
             dataGridView3[0, row].Value = row;
-            dataGridView3[1, row].Value = axisStatus.ServoOn ? "ON" : "OFF";         //Servo On
+            dataGridView3[1, row].Value = axisStatus.ServoOn ? "ON" : axisStatus.ServoOffline ? "-":"OFF";         //Servo On
             dataGridView3[1, row].Style.BackColor = axisStatus.ServoOn ? Color.Green : Color.White;         //Servo On
-            dataGridView3[2, row].Value = axisStatus.PosCmd.ToString("F3");          //Pos Cmd
-            dataGridView3[3, row].Value = axisStatus.ActualPos.ToString("F3");       //Actual Pos
-            dataGridView3[4, row].Value = axisStatus.VelocityCmd.ToString("F3");     //Velocity Cmd
-            dataGridView3[5, row].Value = SSCApiBase.OP_STATE(axisStatus.OpState);   //Op State
+            dataGridView3[2, row].Value = axisStatus.ServoOffline ? "-" : axisStatus.PosCmd.ToString("F3");          //Pos Cmd
+            dataGridView3[3, row].Value = axisStatus.ServoOffline ? "-" : axisStatus.ActualPos.ToString("F3");       //Actual Pos
+            dataGridView3[4, row].Value = axisStatus.ServoOffline ? "-" : axisStatus.VelocityCmd.ToString("F3");     //Velocity Cmd
+            dataGridView3[5, row].Value = axisStatus.ServoOffline ? "-" : SSCApiBase.OP_STATE(axisStatus.OpState);   //Op State
         }
 
         //----------------------------------------------------------------
