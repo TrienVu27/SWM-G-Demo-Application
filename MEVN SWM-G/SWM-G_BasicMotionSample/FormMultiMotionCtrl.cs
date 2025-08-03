@@ -15,6 +15,7 @@ namespace BasicMotionSample
         private const int MaxAxiShow = 10;
         private int AxesGroupSelected = 0;
         private bool bEnableUpdate = true;
+        private  bool bAbsRelMov = false;
 
         private SSCApiAxesMonitor sscApiAxesMonitor = null;     //SSCApiAxesMonitor class
         private static int formCount = 0;                       //Number of display forms.
@@ -133,7 +134,7 @@ namespace BasicMotionSample
         {
             CoreMotionAxisStatus[] axisStatus = sscApiAxesMonitor.GetAxesStatus();
             bool bRet;
-            int axis = e.RowIndex + MaxAxiShow * comboBoxAxesGroup.SelectedIndex;
+            int axis = e.RowIndex != -1 ? e.RowIndex + MaxAxiShow * comboBoxAxesGroup.SelectedIndex : 0;
             switch (e.ColumnIndex)
             {
                 case 2://SrvON
@@ -147,7 +148,8 @@ namespace BasicMotionSample
                 case 7://checkBox
                     if (e.RowIndex != -1)
                     {
-                        dataGridView1[8, e.RowIndex].Value = Convert.ToBoolean(dataGridView1[7, e.RowIndex].Value) ? "AbsMove" : "RelMove";
+                        dataGridView1[8, e.RowIndex].Value = dataGridView1[8, e.RowIndex].Value.ToString() == "AbsMove" ? "RelMove": "AbsMove";
+                        dataGridView1[8, e.RowIndex].Style.BackColor = dataGridView1[8, e.RowIndex].Value.ToString() == "AbsMove" ? Color.White : Color.LightGreen;
                     }                   
                     break;
                 case 8:
@@ -162,7 +164,7 @@ namespace BasicMotionSample
         {
             bool bRet;
             int axis = e.RowIndex + MaxAxiShow * comboBoxAxesGroup.SelectedIndex;
-            double.TryParse(dataGridView1[9, e.RowIndex].Value.ToString(), out double velocity);
+            bRet = e.RowIndex != -1 ? double.TryParse(dataGridView1[9, e.RowIndex].Value.ToString(), out double velocity) : double.TryParse("0", out velocity);
             double accDcc = 10000;
             switch (e.ColumnIndex)
             {
@@ -199,6 +201,11 @@ namespace BasicMotionSample
         private void buttonNext_Click(object sender, EventArgs e)
         {
             comboBoxAxesGroup.SelectedIndex = (comboBoxAxesGroup.SelectedIndex >= 12) ? 12 : comboBoxAxesGroup.SelectedIndex + 1;
+        }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }   
 }

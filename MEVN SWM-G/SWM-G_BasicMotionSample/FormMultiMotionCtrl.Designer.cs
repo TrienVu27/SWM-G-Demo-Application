@@ -45,6 +45,7 @@ namespace BasicMotionSample
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Axis = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ready = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SrvON = new System.Windows.Forms.DataGridViewButtonColumn();
@@ -52,12 +53,12 @@ namespace BasicMotionSample
             this.Reset = new System.Windows.Forms.DataGridViewButtonColumn();
             this.TargetPos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Velocity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ABSRELcheck = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.ABSRELcheck = new System.Windows.Forms.DataGridViewButtonColumn();
             this.ABSREL = new System.Windows.Forms.DataGridViewButtonColumn();
             this.JOGSpeed = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.JOGdown = new System.Windows.Forms.DataGridViewButtonColumn();
             this.JOGup = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.buttonClose = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -73,9 +74,9 @@ namespace BasicMotionSample
             this.groupBox1.Controls.Add(this.comboBoxAxesGroup);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(1, 5);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(873, 69);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -85,7 +86,7 @@ namespace BasicMotionSample
             // 
             this.buttonParameters.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonParameters.Location = new System.Drawing.Point(747, 28);
-            this.buttonParameters.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonParameters.Margin = new System.Windows.Forms.Padding(4);
             this.buttonParameters.Name = "buttonParameters";
             this.buttonParameters.Size = new System.Drawing.Size(109, 26);
             this.buttonParameters.TabIndex = 4;
@@ -96,7 +97,7 @@ namespace BasicMotionSample
             // 
             this.buttonWRITE.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonWRITE.Location = new System.Drawing.Point(607, 28);
-            this.buttonWRITE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonWRITE.Margin = new System.Windows.Forms.Padding(4);
             this.buttonWRITE.Name = "buttonWRITE";
             this.buttonWRITE.Size = new System.Drawing.Size(88, 26);
             this.buttonWRITE.TabIndex = 3;
@@ -107,7 +108,7 @@ namespace BasicMotionSample
             // 
             this.buttonREAD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonREAD.Location = new System.Drawing.Point(519, 28);
-            this.buttonREAD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonREAD.Margin = new System.Windows.Forms.Padding(4);
             this.buttonREAD.Name = "buttonREAD";
             this.buttonREAD.Size = new System.Drawing.Size(88, 26);
             this.buttonREAD.TabIndex = 2;
@@ -118,7 +119,7 @@ namespace BasicMotionSample
             // 
             this.buttonNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonNext.Location = new System.Drawing.Point(329, 28);
-            this.buttonNext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonNext.Margin = new System.Windows.Forms.Padding(4);
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.Size = new System.Drawing.Size(39, 26);
             this.buttonNext.TabIndex = 1;
@@ -130,7 +131,7 @@ namespace BasicMotionSample
             // 
             this.buttonPrev.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPrev.Location = new System.Drawing.Point(289, 28);
-            this.buttonPrev.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonPrev.Margin = new System.Windows.Forms.Padding(4);
             this.buttonPrev.Name = "buttonPrev";
             this.buttonPrev.Size = new System.Drawing.Size(39, 26);
             this.buttonPrev.TabIndex = 0;
@@ -156,7 +157,7 @@ namespace BasicMotionSample
             "110 ~ 119",
             "120 ~ 127"});
             this.comboBoxAxesGroup.Location = new System.Drawing.Point(177, 28);
-            this.comboBoxAxesGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBoxAxesGroup.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxAxesGroup.Name = "comboBoxAxesGroup";
             this.comboBoxAxesGroup.Size = new System.Drawing.Size(108, 24);
             this.comboBoxAxesGroup.TabIndex = 0;
@@ -179,9 +180,9 @@ namespace BasicMotionSample
             // 
             this.groupBox2.Controls.Add(this.dataGridView1);
             this.groupBox2.Location = new System.Drawing.Point(1, 81);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(873, 352);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
@@ -226,7 +227,7 @@ namespace BasicMotionSample
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.Location = new System.Drawing.Point(11, 23);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
@@ -248,12 +249,17 @@ namespace BasicMotionSample
             this.dataGridView1.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseDown);
             this.dataGridView1.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseUp);
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Axis
             // 
             this.Axis.HeaderText = "Axis";
             this.Axis.MinimumWidth = 6;
             this.Axis.Name = "Axis";
-            this.Axis.ReadOnly = true;
+            this.Axis.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Axis.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.Axis.Width = 50;
             // 
             // Ready
@@ -261,8 +267,7 @@ namespace BasicMotionSample
             this.Ready.HeaderText = "Ready";
             this.Ready.MinimumWidth = 6;
             this.Ready.Name = "Ready";
-            this.Ready.ReadOnly = true;
-            this.Ready.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Ready.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Ready.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.Ready.Width = 40;
             // 
@@ -271,6 +276,7 @@ namespace BasicMotionSample
             this.SrvON.HeaderText = "SrvON";
             this.SrvON.MinimumWidth = 6;
             this.SrvON.Name = "SrvON";
+            this.SrvON.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.SrvON.Width = 45;
             // 
             // Home
@@ -278,6 +284,7 @@ namespace BasicMotionSample
             this.Home.HeaderText = "Home";
             this.Home.MinimumWidth = 6;
             this.Home.Name = "Home";
+            this.Home.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Home.Width = 40;
             // 
             // Reset
@@ -285,6 +292,7 @@ namespace BasicMotionSample
             this.Reset.HeaderText = "Reset";
             this.Reset.MinimumWidth = 6;
             this.Reset.Name = "Reset";
+            this.Reset.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Reset.Width = 40;
             // 
             // TargetPos
@@ -292,6 +300,8 @@ namespace BasicMotionSample
             this.TargetPos.HeaderText = "Target Pos";
             this.TargetPos.MinimumWidth = 6;
             this.TargetPos.Name = "TargetPos";
+            this.TargetPos.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.TargetPos.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.TargetPos.Width = 90;
             // 
             // Velocity
@@ -299,13 +309,16 @@ namespace BasicMotionSample
             this.Velocity.HeaderText = "Velocity";
             this.Velocity.MinimumWidth = 6;
             this.Velocity.Name = "Velocity";
+            this.Velocity.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.Velocity.Width = 90;
             // 
             // ABSRELcheck
             // 
+            this.ABSRELcheck.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.ABSRELcheck.HeaderText = "";
             this.ABSRELcheck.MinimumWidth = 6;
             this.ABSRELcheck.Name = "ABSRELcheck";
+            this.ABSRELcheck.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.ABSRELcheck.Width = 20;
             // 
             // ABSREL
@@ -313,6 +326,7 @@ namespace BasicMotionSample
             this.ABSREL.HeaderText = "ABS/REL";
             this.ABSREL.MinimumWidth = 6;
             this.ABSREL.Name = "ABSREL";
+            this.ABSREL.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.ABSREL.Width = 70;
             // 
             // JOGSpeed
@@ -320,6 +334,8 @@ namespace BasicMotionSample
             this.JOGSpeed.HeaderText = "JOG Speed";
             this.JOGSpeed.MinimumWidth = 6;
             this.JOGSpeed.Name = "JOGSpeed";
+            this.JOGSpeed.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.JOGSpeed.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.JOGSpeed.Width = 90;
             // 
             // JOGdown
@@ -327,6 +343,7 @@ namespace BasicMotionSample
             this.JOGdown.HeaderText = "JOG -";
             this.JOGdown.MinimumWidth = 6;
             this.JOGdown.Name = "JOGdown";
+            this.JOGdown.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.JOGdown.Width = 30;
             // 
             // JOGup
@@ -334,17 +351,26 @@ namespace BasicMotionSample
             this.JOGup.HeaderText = "JOG +";
             this.JOGup.MinimumWidth = 6;
             this.JOGup.Name = "JOGup";
+            this.JOGup.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.JOGup.Width = 30;
             // 
-            // timer1
+            // buttonClose
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.buttonClose.Location = new System.Drawing.Point(678, 441);
+            this.buttonClose.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(187, 30);
+            this.buttonClose.TabIndex = 10;
+            this.buttonClose.Text = "Close";
+            this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // FormMultiMotionCtrl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(881, 572);
+            this.ClientSize = new System.Drawing.Size(881, 479);
+            this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -380,10 +406,11 @@ namespace BasicMotionSample
         private System.Windows.Forms.DataGridViewButtonColumn Reset;
         private System.Windows.Forms.DataGridViewTextBoxColumn TargetPos;
         private System.Windows.Forms.DataGridViewTextBoxColumn Velocity;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn ABSRELcheck;
+        private System.Windows.Forms.DataGridViewButtonColumn ABSRELcheck;
         private System.Windows.Forms.DataGridViewButtonColumn ABSREL;
         private System.Windows.Forms.DataGridViewTextBoxColumn JOGSpeed;
         private System.Windows.Forms.DataGridViewButtonColumn JOGdown;
         private System.Windows.Forms.DataGridViewButtonColumn JOGup;
+        private System.Windows.Forms.Button buttonClose;
     }
 }

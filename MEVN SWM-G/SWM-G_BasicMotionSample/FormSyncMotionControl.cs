@@ -535,8 +535,9 @@ namespace BasicMotionSample
         private void buttonAlarmReset_Click(object sender, EventArgs e)
         {
             //sscLib_cm.AxisControl.ClearAxisAlarm(Axis_Master);
+            sscLib_cm.AxisControl.ClearAmpAlarm(Axis_Master);
             //testGIT
-            
+
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
