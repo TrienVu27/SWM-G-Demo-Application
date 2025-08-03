@@ -58,7 +58,7 @@ namespace BasicMotionSample
         private int PosPoint = 2;         //positioning point.
 
         //----------------------------------------------
-        int Axis_Master = 0;
+        private int Axis_Master = 0;
 
         public FormSyncMotionControl()
         {
