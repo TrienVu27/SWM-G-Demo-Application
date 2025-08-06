@@ -79,10 +79,11 @@ namespace BasicMotionSample
 
         private void UpdateAxesMonitor(int row, ref CoreMotionAxisStatus axisStatus)
         {
-            dataGridView1[1, row].Style.BackColor = axisStatus.ServoOn ? (axisStatus.HomeDone ? Color.Green : Color.Yellow) : (axisStatus.AmpAlarm ? Color.Red : Color.White);
+            
             dataGridView1.Rows[row].ReadOnly = axisStatus.ServoOffline ? true : false;
             dataGridView1.Rows[row].DefaultCellStyle.BackColor = axisStatus.ServoOffline ? Color.DarkGray : Color.White;
             dataGridView1[3, row].Value = axisStatus.AmpAlarm ? axisStatus.AmpAlarmCode.ToString() : "-";
+            dataGridView1[1, row].Style.BackColor = axisStatus.ServoOn ? (axisStatus.HomeDone ? Color.Green : Color.Yellow) : (axisStatus.AmpAlarm ? Color.Red : (axisStatus.ServoOffline ? Color.DarkGray : Color.White));
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -108,7 +109,26 @@ namespace BasicMotionSample
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            
+            CoreMotionAxisStatus[] axisStatus = sscApiAxesMonitor.GetAxesStatus();
+            for (int i = 0; i < MaxAxiShow; i++)
+            {
+                dataGridView1[4, i].Value = axisStatus[i].ServoOffline ? false : checkBox1.Checked;
+            }
+        }
+
+        private void buttonResetChecked_Click(object sender, EventArgs e)
+        {
+            CoreMotionAxisStatus[] axisStatus = sscApiAxesMonitor.GetAxesStatus();
+            for (int i = 0; i < MaxAxiShow; i++)
+            {
+                int bRet = Convert.ToBoolean(dataGridView1[4, i].Value) ? (axisStatus[i].AmpAlarm ? sscApiCoreMotion.AxisControl.ClearAmpAlarm(i) : 0) : 0;
+            }
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CoreMotionAxisStatus[] axisStatus = sscApiAxesMonitor.GetAxesStatus();
+            int bRet = (e.ColumnIndex == 2) ? (axisStatus[e.RowIndex].AmpAlarm ? sscApiCoreMotion.AxisControl.ClearAmpAlarm(e.RowIndex) : 0) : 0;
         }
     }
 }

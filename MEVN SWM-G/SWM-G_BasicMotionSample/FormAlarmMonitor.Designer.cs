@@ -114,6 +114,7 @@ namespace BasicMotionSample
             this.dataGridView1.ShowEditingIcon = false;
             this.dataGridView1.Size = new System.Drawing.Size(340, 260);
             this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // Axis
             // 
@@ -167,16 +168,14 @@ namespace BasicMotionSample
             // 
             // groupBox1
             // 
-            this.groupBox1.AutoSize = true;
-            this.groupBox1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBox1.Controls.Add(this.buttonResetAll);
             this.groupBox1.Controls.Add(this.buttonResetChecked);
             this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Location = new System.Drawing.Point(3, 303);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(3, 317);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(305, 62);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(358, 56);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
@@ -184,7 +183,7 @@ namespace BasicMotionSample
             // buttonResetAll
             // 
             this.buttonResetAll.Location = new System.Drawing.Point(201, 24);
-            this.buttonResetAll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonResetAll.Margin = new System.Windows.Forms.Padding(2);
             this.buttonResetAll.Name = "buttonResetAll";
             this.buttonResetAll.Size = new System.Drawing.Size(100, 21);
             this.buttonResetAll.TabIndex = 5;
@@ -195,18 +194,19 @@ namespace BasicMotionSample
             // buttonResetChecked
             // 
             this.buttonResetChecked.Location = new System.Drawing.Point(87, 24);
-            this.buttonResetChecked.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonResetChecked.Margin = new System.Windows.Forms.Padding(2);
             this.buttonResetChecked.Name = "buttonResetChecked";
             this.buttonResetChecked.Size = new System.Drawing.Size(100, 21);
             this.buttonResetChecked.TabIndex = 4;
             this.buttonResetChecked.Text = "Reset Axes";
             this.buttonResetChecked.UseVisualStyleBackColor = true;
+            this.buttonResetChecked.Click += new System.EventHandler(this.buttonResetChecked_Click);
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(18, 27);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(70, 17);
             this.checkBox1.TabIndex = 0;
@@ -216,8 +216,8 @@ namespace BasicMotionSample
             // 
             // buttonClose
             // 
-            this.buttonClose.Location = new System.Drawing.Point(261, 369);
-            this.buttonClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonClose.Location = new System.Drawing.Point(261, 377);
+            this.buttonClose.Margin = new System.Windows.Forms.Padding(2);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(100, 21);
             this.buttonClose.TabIndex = 6;
@@ -231,12 +231,12 @@ namespace BasicMotionSample
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(372, 458);
+            this.ClientSize = new System.Drawing.Size(372, 409);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormAlarmMonitor";
             this.Text = "Alarm Monitor";
             this.Load += new System.EventHandler(this.FormAlarmMonitor_Load);

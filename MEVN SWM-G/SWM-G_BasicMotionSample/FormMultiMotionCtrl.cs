@@ -105,9 +105,9 @@ namespace BasicMotionSample
         }
         private void UpdateAxesMonitor(int row, ref CoreMotionAxisStatus axisStatus)
         {
-            
-            
-            dataGridView1[1, row].Style.BackColor = axisStatus.ServoOn ? (axisStatus.HomeDone ? Color.Green : Color.Yellow) : (axisStatus.AmpAlarm ? Color.Red : Color.White);
+
+
+            dataGridView1[1, row].Style.BackColor = axisStatus.ServoOn ? (axisStatus.HomeDone ? Color.Green : Color.Yellow) : (axisStatus.AmpAlarm ? Color.Red : (axisStatus.ServoOffline ? Color.DarkGray : Color.White));
             dataGridView1.Rows[row].ReadOnly = axisStatus.ServoOffline ? true : false;
             dataGridView1.Rows[row].DefaultCellStyle.BackColor = axisStatus.ServoOffline ? Color.DarkGray : Color.White;
         }
@@ -141,7 +141,7 @@ namespace BasicMotionSample
                     bRet = e.RowIndex != -1 ? axisStatus[axis].ServoOn ? sscApiMotionCtrl.ServoOn(axis, false) : sscApiMotionCtrl.ServoOn(axis, true): false;
                     break;
                 case 3://Home
-                    bRet = e.RowIndex != -1 ? axisStatus[axis].HomeDone ? true : sscApiMotionCtrl.Home(axis) : false;
+                    bRet = (e.RowIndex != -1) ? (axisStatus[axis].ServoOffline ? false : axisStatus[axis].HomeDone ? true : sscApiMotionCtrl.Home(axis)) : false;
                     break;
                 case 4://reset
                     break;
