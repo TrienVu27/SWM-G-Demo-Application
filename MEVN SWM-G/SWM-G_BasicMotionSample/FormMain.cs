@@ -371,5 +371,11 @@ namespace BasicMotionSample
             FormMultiMotionCtrl myform = new FormMultiMotionCtrl();
             myform.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormMelsofGEMINIControl myform = new FormMelsofGEMINIControl();
+            myform.Show();
+        }
     }
 }
