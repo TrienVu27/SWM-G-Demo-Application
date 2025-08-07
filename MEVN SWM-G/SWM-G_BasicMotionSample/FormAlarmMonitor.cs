@@ -18,7 +18,9 @@ namespace BasicMotionSample
         private SSCApiAxesMonitor sscApiAxesMonitor = null;     //SSCApiAxesMonitor class
         private static int formCount = 0;                       //Number of display forms.
         private SSCApiControl sscApiMotionCtrl = null;  //SSCApiControl class\
-        private CoreMotion sscApiCoreMotion = null;
+
+        static SSCApi sscLib = new SSCApi();
+        private CoreMotion sscLib_cm = new CoreMotion(sscLib);
         public FormAlarmMonitor()
         {
             InitializeComponent();
@@ -60,6 +62,9 @@ namespace BasicMotionSample
                     //Initial controls.
                     timer1.Enabled = true;
                     InitializeDataGridView();
+                    sscLib.CreateDevice("C:\\Program Files\\MotionSoftware\\SWM-G\\",
+                                 DeviceType.DeviceTypeNormal,
+                                 0xFFFFFFFF);
 
                 }
                 else
@@ -74,6 +79,8 @@ namespace BasicMotionSample
         {
             sscApiAxesMonitor = new SSCApiAxesMonitor();
             sscApiMotionCtrl = new SSCApiControl();
+            
+
             return ((sscApiAxesMonitor != null) && (sscApiMotionCtrl != null));
         }
 
@@ -103,7 +110,7 @@ namespace BasicMotionSample
             CoreMotionAxisStatus[] axisStatus = sscApiAxesMonitor.GetAxesStatus();
             for (int i = 0; i < MaxAxiShow; i++)
             {
-                int bRet = axisStatus[i].AmpAlarm ? sscApiCoreMotion.AxisControl.ClearAmpAlarm(i) : 0; 
+                int bRet = axisStatus[i].AmpAlarm ? sscLib_cm.AxisControl.ClearAmpAlarm(i) : 0; 
             }
         }
 
@@ -121,14 +128,14 @@ namespace BasicMotionSample
             CoreMotionAxisStatus[] axisStatus = sscApiAxesMonitor.GetAxesStatus();
             for (int i = 0; i < MaxAxiShow; i++)
             {
-                int bRet = Convert.ToBoolean(dataGridView1[4, i].Value) ? (axisStatus[i].AmpAlarm ? sscApiCoreMotion.AxisControl.ClearAmpAlarm(i) : 0) : 0;
+                int bRet = Convert.ToBoolean(dataGridView1[4, i].Value) ? (axisStatus[i].AmpAlarm ? sscLib_cm.AxisControl.ClearAmpAlarm(i) : 0) : 0;
             }
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             CoreMotionAxisStatus[] axisStatus = sscApiAxesMonitor.GetAxesStatus();
-            int bRet = (e.ColumnIndex == 2) ? (axisStatus[e.RowIndex].AmpAlarm ? sscApiCoreMotion.AxisControl.ClearAmpAlarm(e.RowIndex) : 0) : 0;
+            int bRet = (e.ColumnIndex == 2) ? (axisStatus[e.RowIndex].AmpAlarm ? sscLib_cm.AxisControl.ClearAmpAlarm(e.RowIndex) : 0) : 0;
         }
     }
 }

@@ -127,6 +127,7 @@ namespace BasicMotionSample
             if (!bCommunicating)
             {
                 nError = sscApi.StartCommunication(StartCommTimeout);
+                
                 if (ErrorCode.None != nError)
                 {
                     MessageBox.Show(
