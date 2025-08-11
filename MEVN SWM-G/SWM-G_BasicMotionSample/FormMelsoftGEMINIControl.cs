@@ -200,7 +200,8 @@ namespace BasicMotionSample
             Ctrl_X_Axis.NodeId = new NodeId("ns=2;s=SYSTEM.TAGS.Ctrl_X_Axis");
             Ctrl_X_Axis.AttributeId = Attributes.Value;
             Ctrl_X_Axis.Value = new DataValue();
-            Ctrl_X_Axis.Value.Value = bStart ? (Int32.TryParse(textBoxXTarget.Text, out int X_Axis_value) ? X_Axis_value : 0) : (Int32.TryParse(textBoxXActual.Text, out X_Axis_value) ? X_Axis_value : 0);
+            //Ctrl_X_Axis.Value.Value = bStart ? (Int32.TryParse(textBoxXTarget.Text, out int X_Axis_value) ? X_Axis_value : 0) : (Int32.TryParse(textBoxXActual.Text, out X_Axis_value) ? X_Axis_value : 0);
+            Ctrl_X_Axis.Value.Value = bStart ? (Int32.TryParse(textBoxXActual.Text, out int X_Axis_value) ? X_Axis_value : 0) : (Int32.TryParse(textBoxXActual.Text, out X_Axis_value) ? X_Axis_value : 0);
             nodesToWrite.Add(Ctrl_X_Axis);
 
 
@@ -209,7 +210,8 @@ namespace BasicMotionSample
             Ctrl_Y_Axis.NodeId = new NodeId("ns=2;s=SYSTEM.TAGS.Ctrl_Y_Axis");
             Ctrl_Y_Axis.AttributeId = Attributes.Value;
             Ctrl_Y_Axis.Value = new DataValue();
-            Ctrl_Y_Axis.Value.Value = bStart ? (Int32.TryParse(textBoxYTarget.Text, out int Y_Axis_value) ? Y_Axis_value : 0): (Int32.TryParse(textBoxYActual.Text, out Y_Axis_value) ? Y_Axis_value : 0);
+            //Ctrl_Y_Axis.Value.Value = bStart ? (Int32.TryParse(textBoxYTarget.Text, out int Y_Axis_value) ? Y_Axis_value : 0): (Int32.TryParse(textBoxYActual.Text, out Y_Axis_value) ? Y_Axis_value : 0);
+            Ctrl_Y_Axis.Value.Value = bStart ? (Int32.TryParse(textBoxYActual.Text, out int Y_Axis_value) ? Y_Axis_value : 0) : (Int32.TryParse(textBoxYActual.Text, out Y_Axis_value) ? Y_Axis_value : 0);
             nodesToWrite.Add(Ctrl_Y_Axis);
             
 
