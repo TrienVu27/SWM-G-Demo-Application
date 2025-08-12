@@ -529,6 +529,10 @@ namespace BasicMotionSample
 
         private void buttonClose_Click(object sender, EventArgs e)
         {
+            for (int i = 0; i < MaxMonitorAxes; i++)
+            {
+                int bRet = (Axis_Master != i) ? sscLib_cm.Sync.ResolveSync(i) : 0;
+            }
             Close();
         }
 

@@ -114,7 +114,7 @@ namespace BasicMotionSample
         [Obsolete]
         private void FormMelsofGEMINIControl_Load(object sender, EventArgs e)
         {
-            radioButtonMonitor.Checked = true;
+            radioButtonControl.Checked = true;
             labelOPCConnected.Visible = false;
             labelGEMINICConnected.Visible = false;
             if (CreateSSCApiObject())
@@ -307,8 +307,8 @@ namespace BasicMotionSample
                 !radioButtonControl.Checked && bMoinitor
             )
             {
-                bRet = axisStatus[0].ServoOn ? sscApiMotionCtrl.StartPos(0, X_target * 100, velocity, accDcc) : false;
-                bRet = axisStatus[1].ServoOn ? sscApiMotionCtrl.StartPos(1, Y_target * 100, velocity, accDcc) : false;
+                bRet = axisStatus[0].ServoOn ? sscApiMotionCtrl.StartPos(0, X_target * 100, velocity*100, accDcc) : false;
+                bRet = axisStatus[1].ServoOn ? sscApiMotionCtrl.StartPos(1, Y_target * 100, velocity*100, accDcc) : false;
             }
         }
 

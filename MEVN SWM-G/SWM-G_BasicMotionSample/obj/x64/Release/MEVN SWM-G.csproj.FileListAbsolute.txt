@@ -59,3 +59,5 @@ C:\Users\MEVN\Desktop\Seminar2025 demo\SWMG\SWM-G-Demo-Application\MEVN SWM-G\SW
 C:\Users\MEVN\Desktop\Seminar2025 demo\SWMG\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Release\SWM-G_BasicMotionSample.exe
 C:\Users\MEVN\Desktop\Seminar2025 demo\SWMG\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Release\SWM-G_BasicMotionSample.pdb
 C:\Users\MEVN\Desktop\Seminar2025 demo\SWMG\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Release\SWM-G_BasicMotionSample.exe.config
+C:\MEVN\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Release\SWM-G_BasicMotionSample.exe.config
+C:\MEVN\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Release\BasicMotionSample.FormMelsofGEMINIControl.resources

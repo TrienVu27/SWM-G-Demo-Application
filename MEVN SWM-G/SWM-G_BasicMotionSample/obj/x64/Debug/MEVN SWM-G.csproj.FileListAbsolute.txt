@@ -54,3 +54,5 @@ C:\MEVN\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Debug\
 C:\MEVN\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Debug\MEVN SWM-G.csproj.CopyComplete
 C:\MEVN\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.exe
 C:\MEVN\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.pdb
+C:\MEVN\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Debug\SWM-G_BasicMotionSample.exe.config
+C:\MEVN\SWM-G-Demo-Application\MEVN SWM-G\SWM-G_BasicMotionSample\obj\x64\Debug\BasicMotionSample.FormMelsofGEMINIControl.resources
