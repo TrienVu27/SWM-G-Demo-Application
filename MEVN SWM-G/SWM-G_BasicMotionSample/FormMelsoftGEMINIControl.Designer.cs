@@ -32,6 +32,8 @@ namespace BasicMotionSample
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMelsofGEMINIControl));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.buttonStart = new System.Windows.Forms.Button();
             this.buttonHome = new System.Windows.Forms.Button();
             this.buttonSrvON = new System.Windows.Forms.Button();
@@ -40,6 +42,8 @@ namespace BasicMotionSample
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxXTarget = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.buttonMonitor = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -53,6 +57,7 @@ namespace BasicMotionSample
             this.labelGEMINICConnected = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonStartVC = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -60,6 +65,8 @@ namespace BasicMotionSample
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.buttonStart);
             this.groupBox1.Controls.Add(this.buttonHome);
             this.groupBox1.Controls.Add(this.buttonSrvON);
@@ -73,6 +80,26 @@ namespace BasicMotionSample
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Control";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(118, 29);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(23, 13);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "mm";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(266, 29);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(23, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "mm";
             // 
             // buttonStart
             // 
@@ -141,10 +168,11 @@ namespace BasicMotionSample
             this.textBoxXTarget.TabIndex = 0;
             this.textBoxXTarget.Text = "000";
             this.textBoxXTarget.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBoxXTarget.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.buttonMonitor);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label4);
@@ -156,6 +184,26 @@ namespace BasicMotionSample
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Monitor";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(254, 19);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(23, 13);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "mm";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(104, 19);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(23, 13);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "mm";
             // 
             // buttonMonitor
             // 
@@ -189,20 +237,22 @@ namespace BasicMotionSample
             // 
             // textBoxYActual
             // 
-            this.textBoxYActual.Location = new System.Drawing.Point(230, 16);
+            this.textBoxYActual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxYActual.Location = new System.Drawing.Point(227, 19);
             this.textBoxYActual.Name = "textBoxYActual";
             this.textBoxYActual.ReadOnly = true;
-            this.textBoxYActual.Size = new System.Drawing.Size(35, 20);
+            this.textBoxYActual.Size = new System.Drawing.Size(33, 13);
             this.textBoxYActual.TabIndex = 9;
             this.textBoxYActual.Text = "000";
             this.textBoxYActual.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBoxXActual
             // 
-            this.textBoxXActual.Location = new System.Drawing.Point(76, 15);
+            this.textBoxXActual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxXActual.Location = new System.Drawing.Point(72, 20);
             this.textBoxXActual.Name = "textBoxXActual";
             this.textBoxXActual.ReadOnly = true;
-            this.textBoxXActual.Size = new System.Drawing.Size(39, 20);
+            this.textBoxXActual.Size = new System.Drawing.Size(37, 13);
             this.textBoxXActual.TabIndex = 7;
             this.textBoxXActual.Text = "000";
             this.textBoxXActual.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -280,16 +330,27 @@ namespace BasicMotionSample
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(330, 9);
+            this.panel1.Location = new System.Drawing.Point(319, 9);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1369, 1020);
+            this.panel1.Size = new System.Drawing.Size(1388, 948);
             this.panel1.TabIndex = 9;
+            // 
+            // buttonStartVC
+            // 
+            this.buttonStartVC.Location = new System.Drawing.Point(158, 239);
+            this.buttonStartVC.Name = "buttonStartVC";
+            this.buttonStartVC.Size = new System.Drawing.Size(75, 23);
+            this.buttonStartVC.TabIndex = 10;
+            this.buttonStartVC.Text = "Start VC";
+            this.buttonStartVC.UseVisualStyleBackColor = true;
+            this.buttonStartVC.Click += new System.EventHandler(this.buttonStartVC_Click);
             // 
             // FormMelsofGEMINIControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1711, 1041);
+            this.ClientSize = new System.Drawing.Size(1711, 961);
+            this.Controls.Add(this.buttonStartVC);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.labelGEMINICConnected);
             this.Controls.Add(this.labelOPCConnected);
@@ -297,8 +358,12 @@ namespace BasicMotionSample
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormMelsofGEMINIControl";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Melsof GEMINI Control";
             this.Load += new System.EventHandler(this.FormMelsofGEMINIControl_Load);
             this.Resize += new System.EventHandler(this.FormMelsofGEMINIControl_Resize);
@@ -337,5 +402,10 @@ namespace BasicMotionSample
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button buttonMonitor;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button buttonStartVC;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
     }
 }

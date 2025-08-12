@@ -50,7 +50,18 @@ namespace BasicMotionSample
         [DllImport("user32.dll")]
         private static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
 
+        [DllImport("user32.dll", SetLastError = true)]
+        static extern int GetWindowLong(IntPtr hWnd, int nIndex);
+
+        [DllImport("user32.dll", SetLastError = true)]
+        static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
+
+        const int GWL_STYLE = -16;
+        const int WS_CAPTION = 0x00C00000;
+        const int WS_THICKFRAME = 0x00040000;
+
         private Process vcProcess;
+        private bool bStartVC = false;
 
 
         public FormMelsofGEMINIControl()
@@ -58,11 +69,6 @@ namespace BasicMotionSample
             InitializeComponent();
             this.Load += FormMelsofGEMINIControl_Load;
             this.Resize += FormMelsofGEMINIControl_Resize;
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void buttonClose_Click(object sender, EventArgs e)
@@ -80,13 +86,11 @@ namespace BasicMotionSample
             buttonStart.BackColor = bStart ? Color.Green : Color.White;
             buttonMonitor.BackColor = bMoinitor ? Color.Green : Color.White;
             textBoxXTarget.Enabled = !bStart;
-            textBoxYTarget.Enabled = !bStart;
-            
+            textBoxYTarget.Enabled = !bStart; 
 
             OPCUAUpdateDevices();
             AxesUpdate();
             AxesCotrol();
-
 
             timer1.Enabled = true;
         }
@@ -107,8 +111,7 @@ namespace BasicMotionSample
                 radioButtonControl.Checked = false;
                 groupBox1.Enabled = false;
                 bStart = false;
-            }
-            
+            } 
         }
 
         [Obsolete]
@@ -117,6 +120,7 @@ namespace BasicMotionSample
             radioButtonControl.Checked = true;
             labelOPCConnected.Visible = false;
             labelGEMINICConnected.Visible = false;
+            bStartVC = false;
             if (CreateSSCApiObject())
             {
                 if (sscApiAxesMonitor.CreateDevice() && sscApiMotionCtrl.CreateDevice())
@@ -135,30 +139,6 @@ namespace BasicMotionSample
                     MessageBox.Show("Can not CreateDevice, Window was closed");
                     Close();
                 }
-            }
-            // Khởi động Visual Components Experience
-            vcProcess = Process.Start(@"C:\Program Files\Visual Components\Visual Components Experience\VisualComponents.Experience.exe");
-
-            //vcProcess.WaitForInputIdle(); // Chờ app load
-            //Thread.Sleep(8000); // Đợi ứng dụng mở
-            int retry = 0;
-            while (vcProcess.MainWindowHandle == IntPtr.Zero && retry < 500)
-            {
-                Thread.Sleep(10);
-                vcProcess.Refresh(); // Cập nhật thông tin process
-                retry++;
-            }
-
-            IntPtr appWin = vcProcess.MainWindowHandle;
-            if (appWin != IntPtr.Zero)
-            {
-                SetParent(appWin, panel1.Handle); // panel1 là Panel trong WinForms
-                ShowWindow(appWin, 3); // SW_MAXIMIZE
-                ResizeEmbeddedApp();
-            }
-            else
-            {
-                MessageBox.Show("Không tìm thấy cửa sổ VC Experience!");
             }
         }
 
@@ -326,9 +306,45 @@ namespace BasicMotionSample
             }
         }
 
+        private void RemoveWindowBorders(IntPtr hWnd)
+        {
+            int style = GetWindowLong(hWnd, GWL_STYLE);
+            style &= ~WS_CAPTION;    // bỏ caption bar
+            style &= ~WS_THICKFRAME; // bỏ viền resize
+            SetWindowLong(hWnd, GWL_STYLE, style);
+        }
+
         private void FormMelsofGEMINIControl_Resize(object sender, EventArgs e)
         {
             ResizeEmbeddedApp();
+        }
+
+        private void buttonStartVC_Click(object sender, EventArgs e)
+        {
+            if (!bStartVC)
+            {
+                string vcPath = @"C:\Program Files\Visual Components\Visual Components Experience\VisualComponents.Experience.exe";
+                //string vcPath = @"C:\Program Files\Visual Components\Visual Components Experience 4.6\VCExperience.exe";
+
+                vcProcess = Process.Start(vcPath);
+                if (vcProcess == null) return;
+
+                // Đợi cho đến khi cửa sổ chính xuất hiện
+                vcProcess.WaitForInputIdle();
+                while (vcProcess.MainWindowHandle == IntPtr.Zero)
+                {
+                    Thread.Sleep(100); // chờ 100ms
+                    vcProcess.Refresh();
+                }
+
+                // Nhúng vào panel
+                IntPtr vcHandle = vcProcess.MainWindowHandle;
+                SetParent(vcHandle, panel1.Handle);
+                MoveWindow(vcHandle, 0, 0, panel1.Width, panel1.Height, true);
+                ResizeEmbeddedApp();
+                RemoveWindowBorders(vcHandle);
+                bStartVC = true;
+            }    
         }
     }
 }
