@@ -88,7 +88,7 @@
             // 
             this.textTarget.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.textTarget.Location = new System.Drawing.Point(201, 152);
-            this.textTarget.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textTarget.Margin = new System.Windows.Forms.Padding(4);
             this.textTarget.Name = "textTarget";
             this.textTarget.Size = new System.Drawing.Size(132, 22);
             this.textTarget.TabIndex = 5;
@@ -101,9 +101,9 @@
             this.groupBox1.Controls.Add(this.buttonJogP);
             this.groupBox1.Controls.Add(this.buttonJogM);
             this.groupBox1.Location = new System.Drawing.Point(8, 258);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(334, 72);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
@@ -112,19 +112,20 @@
             // buttonJogP
             // 
             this.buttonJogP.Location = new System.Drawing.Point(180, 26);
-            this.buttonJogP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonJogP.Margin = new System.Windows.Forms.Padding(4);
             this.buttonJogP.Name = "buttonJogP";
             this.buttonJogP.Size = new System.Drawing.Size(147, 30);
             this.buttonJogP.TabIndex = 1;
             this.buttonJogP.Text = "JOG(+)";
             this.buttonJogP.UseVisualStyleBackColor = true;
+            this.buttonJogP.Click += new System.EventHandler(this.buttonJogP_Click);
             this.buttonJogP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonJogP_MouseDown);
             this.buttonJogP.MouseUp += new System.Windows.Forms.MouseEventHandler(this.buttonJog_MouseUp);
             // 
             // buttonJogM
             // 
             this.buttonJogM.Location = new System.Drawing.Point(9, 26);
-            this.buttonJogM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonJogM.Margin = new System.Windows.Forms.Padding(4);
             this.buttonJogM.Name = "buttonJogM";
             this.buttonJogM.Size = new System.Drawing.Size(147, 30);
             this.buttonJogM.TabIndex = 0;
@@ -139,9 +140,9 @@
             this.groupBox2.Controls.Add(this.buttonAbs);
             this.groupBox2.Controls.Add(this.buttonRel);
             this.groupBox2.Location = new System.Drawing.Point(8, 338);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(334, 72);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
@@ -150,7 +151,7 @@
             // buttonPause
             // 
             this.buttonPause.Location = new System.Drawing.Point(243, 24);
-            this.buttonPause.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonPause.Margin = new System.Windows.Forms.Padding(4);
             this.buttonPause.Name = "buttonPause";
             this.buttonPause.Size = new System.Drawing.Size(84, 30);
             this.buttonPause.TabIndex = 2;
@@ -161,7 +162,7 @@
             // buttonAbs
             // 
             this.buttonAbs.Location = new System.Drawing.Point(120, 24);
-            this.buttonAbs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonAbs.Margin = new System.Windows.Forms.Padding(4);
             this.buttonAbs.Name = "buttonAbs";
             this.buttonAbs.Size = new System.Drawing.Size(103, 30);
             this.buttonAbs.TabIndex = 1;
@@ -172,7 +173,7 @@
             // buttonRel
             // 
             this.buttonRel.Location = new System.Drawing.Point(9, 24);
-            this.buttonRel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonRel.Margin = new System.Windows.Forms.Padding(4);
             this.buttonRel.Name = "buttonRel";
             this.buttonRel.Size = new System.Drawing.Size(103, 30);
             this.buttonRel.TabIndex = 0;
@@ -183,7 +184,7 @@
             // buttonStop
             // 
             this.buttonStop.Location = new System.Drawing.Point(16, 90);
-            this.buttonStop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonStop.Margin = new System.Windows.Forms.Padding(4);
             this.buttonStop.Name = "buttonStop";
             this.buttonStop.Size = new System.Drawing.Size(147, 30);
             this.buttonStop.TabIndex = 4;
@@ -194,7 +195,7 @@
             // buttonClose
             // 
             this.buttonClose.Location = new System.Drawing.Point(158, 418);
-            this.buttonClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonClose.Margin = new System.Windows.Forms.Padding(4);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(187, 30);
             this.buttonClose.TabIndex = 10;
@@ -206,7 +207,7 @@
             // 
             this.textAxis.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.textAxis.Location = new System.Drawing.Point(76, 18);
-            this.textAxis.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textAxis.Margin = new System.Windows.Forms.Padding(4);
             this.textAxis.Name = "textAxis";
             this.textAxis.Size = new System.Drawing.Size(48, 22);
             this.textAxis.TabIndex = 1;
@@ -227,7 +228,7 @@
             // buttonServoON
             // 
             this.buttonServoON.Location = new System.Drawing.Point(16, 52);
-            this.buttonServoON.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonServoON.Margin = new System.Windows.Forms.Padding(4);
             this.buttonServoON.Name = "buttonServoON";
             this.buttonServoON.Size = new System.Drawing.Size(147, 30);
             this.buttonServoON.TabIndex = 2;
@@ -238,7 +239,7 @@
             // buttonHome
             // 
             this.buttonHome.Location = new System.Drawing.Point(201, 52);
-            this.buttonHome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonHome.Margin = new System.Windows.Forms.Padding(4);
             this.buttonHome.Name = "buttonHome";
             this.buttonHome.Size = new System.Drawing.Size(144, 30);
             this.buttonHome.TabIndex = 3;
@@ -250,7 +251,7 @@
             // 
             this.textVelocity.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.textVelocity.Location = new System.Drawing.Point(201, 186);
-            this.textVelocity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textVelocity.Margin = new System.Windows.Forms.Padding(4);
             this.textVelocity.Name = "textVelocity";
             this.textVelocity.Size = new System.Drawing.Size(132, 22);
             this.textVelocity.TabIndex = 6;
@@ -262,7 +263,7 @@
             // 
             this.textAccDec.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.textAccDec.Location = new System.Drawing.Point(201, 218);
-            this.textAccDec.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textAccDec.Margin = new System.Windows.Forms.Padding(4);
             this.textAccDec.Name = "textAccDec";
             this.textAccDec.Size = new System.Drawing.Size(132, 22);
             this.textAccDec.TabIndex = 7;
@@ -296,7 +297,7 @@
             this.Controls.Add(this.buttonServoON);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormMotionControl";

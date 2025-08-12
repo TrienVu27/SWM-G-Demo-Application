@@ -1,0 +1,1446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="SyncAxes.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="SyncAxes.HeaderText" xml:space="preserve">
+    <value>SyncAxes</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="SyncAxes.MinimumWidth" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="SyncAxes.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 107</value>
+  </data>
+  <data name="dataGridView1.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dataGridView1.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 236</value>
+  </data>
+  <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
+    <value>dataGridView1</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="buttonAllAxisSyncOFF.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonAllAxisSyncOFF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 408</value>
+  </data>
+  <data name="buttonAllAxisSyncOFF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 58</value>
+  </data>
+  <data name="buttonAllAxisSyncOFF.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="buttonAllAxisSyncOFF.Text" xml:space="preserve">
+    <value>All Axis Sync OFF</value>
+  </data>
+  <data name="&gt;&gt;buttonAllAxisSyncOFF.Name" xml:space="preserve">
+    <value>buttonAllAxisSyncOFF</value>
+  </data>
+  <data name="&gt;&gt;buttonAllAxisSyncOFF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonAllAxisSyncOFF.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;buttonAllAxisSyncOFF.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonAllAxisSyncON.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 349</value>
+  </data>
+  <data name="buttonAllAxisSyncON.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 58</value>
+  </data>
+  <data name="buttonAllAxisSyncON.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="buttonAllAxisSyncON.Text" xml:space="preserve">
+    <value>All Axis Sync ON</value>
+  </data>
+  <data name="&gt;&gt;buttonAllAxisSyncON.Name" xml:space="preserve">
+    <value>buttonAllAxisSyncON</value>
+  </data>
+  <data name="&gt;&gt;buttonAllAxisSyncON.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonAllAxisSyncON.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;buttonAllAxisSyncON.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column1.HeaderText" xml:space="preserve">
+    <value>AxisNo</value>
+  </data>
+  <data name="Column1.MinimumWidth" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="Column1.Width" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column2.HeaderText" xml:space="preserve">
+    <value>SyncState</value>
+  </data>
+  <data name="Column2.MinimumWidth" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="Column2.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column3.HeaderText" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="Column3.MinimumWidth" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="Column3.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="dataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 48</value>
+  </data>
+  <data name="dataGridView.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="dataGridView.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="dataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>324, 418</value>
+  </data>
+  <data name="dataGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;dataGridView.Name" xml:space="preserve">
+    <value>dataGridView</value>
+  </data>
+  <data name="&gt;&gt;dataGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;dataGridView.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 90</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 17</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Sync Axes</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="comboBox1.Items" xml:space="preserve">
+    <value>00</value>
+  </data>
+  <data name="comboBox1.Items1" xml:space="preserve">
+    <value>01</value>
+  </data>
+  <data name="comboBox1.Items2" xml:space="preserve">
+    <value>02</value>
+  </data>
+  <data name="comboBox1.Items3" xml:space="preserve">
+    <value>03</value>
+  </data>
+  <data name="comboBox1.Items4" xml:space="preserve">
+    <value>04</value>
+  </data>
+  <data name="comboBox1.Items5" xml:space="preserve">
+    <value>05</value>
+  </data>
+  <data name="comboBox1.Items6" xml:space="preserve">
+    <value>06</value>
+  </data>
+  <data name="comboBox1.Items7" xml:space="preserve">
+    <value>07</value>
+  </data>
+  <data name="comboBox1.Items8" xml:space="preserve">
+    <value>08</value>
+  </data>
+  <data name="comboBox1.Items9" xml:space="preserve">
+    <value>09</value>
+  </data>
+  <data name="comboBox1.Items10" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="comboBox1.Items11" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="comboBox1.Items12" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="comboBox1.Items13" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="comboBox1.Items14" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="comboBox1.Items15" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="comboBox1.Items16" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="comboBox1.Items17" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="comboBox1.Items18" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="comboBox1.Items19" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="comboBox1.Items20" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="comboBox1.Items21" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="comboBox1.Items22" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="comboBox1.Items23" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="comboBox1.Items24" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="comboBox1.Items25" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="comboBox1.Items26" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="comboBox1.Items27" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="comboBox1.Items28" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="comboBox1.Items29" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="comboBox1.Items30" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="comboBox1.Items31" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="comboBox1.Items32" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="comboBox1.Items33" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="comboBox1.Items34" xml:space="preserve">
+    <value>34</value>
+  </data>
+  <data name="comboBox1.Items35" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <data name="comboBox1.Items36" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="comboBox1.Items37" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="comboBox1.Items38" xml:space="preserve">
+    <value>38</value>
+  </data>
+  <data name="comboBox1.Items39" xml:space="preserve">
+    <value>39</value>
+  </data>
+  <data name="comboBox1.Items40" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="comboBox1.Items41" xml:space="preserve">
+    <value>41</value>
+  </data>
+  <data name="comboBox1.Items42" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="comboBox1.Items43" xml:space="preserve">
+    <value>43</value>
+  </data>
+  <data name="comboBox1.Items44" xml:space="preserve">
+    <value>44</value>
+  </data>
+  <data name="comboBox1.Items45" xml:space="preserve">
+    <value>45</value>
+  </data>
+  <data name="comboBox1.Items46" xml:space="preserve">
+    <value>46</value>
+  </data>
+  <data name="comboBox1.Items47" xml:space="preserve">
+    <value>47</value>
+  </data>
+  <data name="comboBox1.Items48" xml:space="preserve">
+    <value>48</value>
+  </data>
+  <data name="comboBox1.Items49" xml:space="preserve">
+    <value>49</value>
+  </data>
+  <data name="comboBox1.Items50" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="comboBox1.Items51" xml:space="preserve">
+    <value>51</value>
+  </data>
+  <data name="comboBox1.Items52" xml:space="preserve">
+    <value>52</value>
+  </data>
+  <data name="comboBox1.Items53" xml:space="preserve">
+    <value>53</value>
+  </data>
+  <data name="comboBox1.Items54" xml:space="preserve">
+    <value>54</value>
+  </data>
+  <data name="comboBox1.Items55" xml:space="preserve">
+    <value>55</value>
+  </data>
+  <data name="comboBox1.Items56" xml:space="preserve">
+    <value>56</value>
+  </data>
+  <data name="comboBox1.Items57" xml:space="preserve">
+    <value>57</value>
+  </data>
+  <data name="comboBox1.Items58" xml:space="preserve">
+    <value>58</value>
+  </data>
+  <data name="comboBox1.Items59" xml:space="preserve">
+    <value>59</value>
+  </data>
+  <data name="comboBox1.Items60" xml:space="preserve">
+    <value>60</value>
+  </data>
+  <data name="comboBox1.Items61" xml:space="preserve">
+    <value>61</value>
+  </data>
+  <data name="comboBox1.Items62" xml:space="preserve">
+    <value>62</value>
+  </data>
+  <data name="comboBox1.Items63" xml:space="preserve">
+    <value>63</value>
+  </data>
+  <data name="comboBox1.Items64" xml:space="preserve">
+    <value>64</value>
+  </data>
+  <data name="comboBox1.Items65" xml:space="preserve">
+    <value>65</value>
+  </data>
+  <data name="comboBox1.Items66" xml:space="preserve">
+    <value>66</value>
+  </data>
+  <data name="comboBox1.Items67" xml:space="preserve">
+    <value>67</value>
+  </data>
+  <data name="comboBox1.Items68" xml:space="preserve">
+    <value>68</value>
+  </data>
+  <data name="comboBox1.Items69" xml:space="preserve">
+    <value>69</value>
+  </data>
+  <data name="comboBox1.Items70" xml:space="preserve">
+    <value>70</value>
+  </data>
+  <data name="comboBox1.Items71" xml:space="preserve">
+    <value>71</value>
+  </data>
+  <data name="comboBox1.Items72" xml:space="preserve">
+    <value>72</value>
+  </data>
+  <data name="comboBox1.Items73" xml:space="preserve">
+    <value>73</value>
+  </data>
+  <data name="comboBox1.Items74" xml:space="preserve">
+    <value>74</value>
+  </data>
+  <data name="comboBox1.Items75" xml:space="preserve">
+    <value>75</value>
+  </data>
+  <data name="comboBox1.Items76" xml:space="preserve">
+    <value>76</value>
+  </data>
+  <data name="comboBox1.Items77" xml:space="preserve">
+    <value>77</value>
+  </data>
+  <data name="comboBox1.Items78" xml:space="preserve">
+    <value>78</value>
+  </data>
+  <data name="comboBox1.Items79" xml:space="preserve">
+    <value>79</value>
+  </data>
+  <data name="comboBox1.Items80" xml:space="preserve">
+    <value>80</value>
+  </data>
+  <data name="comboBox1.Items81" xml:space="preserve">
+    <value>81</value>
+  </data>
+  <data name="comboBox1.Items82" xml:space="preserve">
+    <value>82</value>
+  </data>
+  <data name="comboBox1.Items83" xml:space="preserve">
+    <value>83</value>
+  </data>
+  <data name="comboBox1.Items84" xml:space="preserve">
+    <value>84</value>
+  </data>
+  <data name="comboBox1.Items85" xml:space="preserve">
+    <value>85</value>
+  </data>
+  <data name="comboBox1.Items86" xml:space="preserve">
+    <value>86</value>
+  </data>
+  <data name="comboBox1.Items87" xml:space="preserve">
+    <value>87</value>
+  </data>
+  <data name="comboBox1.Items88" xml:space="preserve">
+    <value>88</value>
+  </data>
+  <data name="comboBox1.Items89" xml:space="preserve">
+    <value>89</value>
+  </data>
+  <data name="comboBox1.Items90" xml:space="preserve">
+    <value>90</value>
+  </data>
+  <data name="comboBox1.Items91" xml:space="preserve">
+    <value>91</value>
+  </data>
+  <data name="comboBox1.Items92" xml:space="preserve">
+    <value>92</value>
+  </data>
+  <data name="comboBox1.Items93" xml:space="preserve">
+    <value>93</value>
+  </data>
+  <data name="comboBox1.Items94" xml:space="preserve">
+    <value>94</value>
+  </data>
+  <data name="comboBox1.Items95" xml:space="preserve">
+    <value>95</value>
+  </data>
+  <data name="comboBox1.Items96" xml:space="preserve">
+    <value>96</value>
+  </data>
+  <data name="comboBox1.Items97" xml:space="preserve">
+    <value>97</value>
+  </data>
+  <data name="comboBox1.Items98" xml:space="preserve">
+    <value>98</value>
+  </data>
+  <data name="comboBox1.Items99" xml:space="preserve">
+    <value>99</value>
+  </data>
+  <data name="comboBox1.Items100" xml:space="preserve">
+    <value>100</value>
+  </data>
+  <data name="comboBox1.Items101" xml:space="preserve">
+    <value>101</value>
+  </data>
+  <data name="comboBox1.Items102" xml:space="preserve">
+    <value>102</value>
+  </data>
+  <data name="comboBox1.Items103" xml:space="preserve">
+    <value>103</value>
+  </data>
+  <data name="comboBox1.Items104" xml:space="preserve">
+    <value>104</value>
+  </data>
+  <data name="comboBox1.Items105" xml:space="preserve">
+    <value>105</value>
+  </data>
+  <data name="comboBox1.Items106" xml:space="preserve">
+    <value>106</value>
+  </data>
+  <data name="comboBox1.Items107" xml:space="preserve">
+    <value>107</value>
+  </data>
+  <data name="comboBox1.Items108" xml:space="preserve">
+    <value>108</value>
+  </data>
+  <data name="comboBox1.Items109" xml:space="preserve">
+    <value>109</value>
+  </data>
+  <data name="comboBox1.Items110" xml:space="preserve">
+    <value>110</value>
+  </data>
+  <data name="comboBox1.Items111" xml:space="preserve">
+    <value>111</value>
+  </data>
+  <data name="comboBox1.Items112" xml:space="preserve">
+    <value>112</value>
+  </data>
+  <data name="comboBox1.Items113" xml:space="preserve">
+    <value>113</value>
+  </data>
+  <data name="comboBox1.Items114" xml:space="preserve">
+    <value>114</value>
+  </data>
+  <data name="comboBox1.Items115" xml:space="preserve">
+    <value>115</value>
+  </data>
+  <data name="comboBox1.Items116" xml:space="preserve">
+    <value>116</value>
+  </data>
+  <data name="comboBox1.Items117" xml:space="preserve">
+    <value>117</value>
+  </data>
+  <data name="comboBox1.Items118" xml:space="preserve">
+    <value>118</value>
+  </data>
+  <data name="comboBox1.Items119" xml:space="preserve">
+    <value>119</value>
+  </data>
+  <data name="comboBox1.Items120" xml:space="preserve">
+    <value>120</value>
+  </data>
+  <data name="comboBox1.Items121" xml:space="preserve">
+    <value>121</value>
+  </data>
+  <data name="comboBox1.Items122" xml:space="preserve">
+    <value>122</value>
+  </data>
+  <data name="comboBox1.Items123" xml:space="preserve">
+    <value>123</value>
+  </data>
+  <data name="comboBox1.Items124" xml:space="preserve">
+    <value>124</value>
+  </data>
+  <data name="comboBox1.Items125" xml:space="preserve">
+    <value>125</value>
+  </data>
+  <data name="comboBox1.Items126" xml:space="preserve">
+    <value>126</value>
+  </data>
+  <data name="comboBox1.Items127" xml:space="preserve">
+    <value>127</value>
+  </data>
+  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 53</value>
+  </data>
+  <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 24</value>
+  </data>
+  <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="comboBox1.Text" xml:space="preserve">
+    <value>00</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
+    <value>comboBox1</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 34</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 17</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Master Axis</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="groupBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8pt</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 12</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 476</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Sync Configuration</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="timerMonitor.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="buttonAlarmReset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonAlarmReset.Location" type="System.Drawing.Point, System.Drawing">
+    <value>230, 27</value>
+  </data>
+  <data name="buttonAlarmReset.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="buttonAlarmReset.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 35</value>
+  </data>
+  <data name="buttonAlarmReset.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="buttonAlarmReset.Text" xml:space="preserve">
+    <value>Alarm Reset</value>
+  </data>
+  <data name="&gt;&gt;buttonAlarmReset.Name" xml:space="preserve">
+    <value>buttonAlarmReset</value>
+  </data>
+  <data name="&gt;&gt;buttonAlarmReset.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonAlarmReset.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;buttonAlarmReset.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="buttonPause.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonPause.Location" type="System.Drawing.Point, System.Drawing">
+    <value>230, 70</value>
+  </data>
+  <data name="buttonPause.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="buttonPause.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 35</value>
+  </data>
+  <data name="buttonPause.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="buttonPause.Text" xml:space="preserve">
+    <value>Pause</value>
+  </data>
+  <data name="&gt;&gt;buttonPause.Name" xml:space="preserve">
+    <value>buttonPause</value>
+  </data>
+  <data name="&gt;&gt;buttonPause.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonPause.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;buttonPause.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonStart.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonStart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 70</value>
+  </data>
+  <data name="buttonStart.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="buttonStart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 35</value>
+  </data>
+  <data name="buttonStart.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="buttonStart.Text" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="&gt;&gt;buttonStart.Name" xml:space="preserve">
+    <value>buttonStart</value>
+  </data>
+  <data name="&gt;&gt;buttonStart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonStart.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;buttonStart.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="buttonStop.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonStop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>346, 70</value>
+  </data>
+  <data name="buttonStop.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="buttonStop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 35</value>
+  </data>
+  <data name="buttonStop.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="buttonStop.Text" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="&gt;&gt;buttonStop.Name" xml:space="preserve">
+    <value>buttonStop</value>
+  </data>
+  <data name="&gt;&gt;buttonStop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonStop.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;buttonStop.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="buttonHome.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonHome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 70</value>
+  </data>
+  <data name="buttonHome.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="buttonHome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 35</value>
+  </data>
+  <data name="buttonHome.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="buttonHome.Text" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="&gt;&gt;buttonHome.Name" xml:space="preserve">
+    <value>buttonHome</value>
+  </data>
+  <data name="&gt;&gt;buttonHome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonHome.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;buttonHome.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="buttonAllServoOFF.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonAllServoOFF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 27</value>
+  </data>
+  <data name="buttonAllServoOFF.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="buttonAllServoOFF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 35</value>
+  </data>
+  <data name="buttonAllServoOFF.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="buttonAllServoOFF.Text" xml:space="preserve">
+    <value>All Servo OFF</value>
+  </data>
+  <data name="&gt;&gt;buttonAllServoOFF.Name" xml:space="preserve">
+    <value>buttonAllServoOFF</value>
+  </data>
+  <data name="&gt;&gt;buttonAllServoOFF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonAllServoOFF.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;buttonAllServoOFF.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="buttonAllServoON.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonAllServoON.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 27</value>
+  </data>
+  <data name="buttonAllServoON.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="buttonAllServoON.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 35</value>
+  </data>
+  <data name="buttonAllServoON.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="buttonAllServoON.Text" xml:space="preserve">
+    <value>All Servo ON</value>
+  </data>
+  <data name="&gt;&gt;buttonAllServoON.Name" xml:space="preserve">
+    <value>buttonAllServoON</value>
+  </data>
+  <data name="&gt;&gt;buttonAllServoON.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonAllServoON.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;buttonAllServoON.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 494</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 117</value>
+  </data>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>Master Control</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="comboBox2.Items" xml:space="preserve">
+    <value>01</value>
+  </data>
+  <data name="comboBox2.Items1" xml:space="preserve">
+    <value>02</value>
+  </data>
+  <data name="comboBox2.Items2" xml:space="preserve">
+    <value>03</value>
+  </data>
+  <data name="comboBox2.Items3" xml:space="preserve">
+    <value>04</value>
+  </data>
+  <data name="comboBox2.Items4" xml:space="preserve">
+    <value>05</value>
+  </data>
+  <data name="comboBox2.Items5" xml:space="preserve">
+    <value>06</value>
+  </data>
+  <data name="comboBox2.Items6" xml:space="preserve">
+    <value>07</value>
+  </data>
+  <data name="comboBox2.Items7" xml:space="preserve">
+    <value>08</value>
+  </data>
+  <data name="comboBox2.Items8" xml:space="preserve">
+    <value>09</value>
+  </data>
+  <data name="comboBox2.Items9" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="comboBox2.Items10" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="comboBox2.Items11" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="comboBox2.Items12" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="comboBox2.Items13" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="comboBox2.Items14" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="comboBox2.Items15" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="comboBox2.Items16" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="comboBox2.Items17" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="comboBox2.Items18" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="comboBox2.Items19" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="comboBox2.Items20" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="comboBox2.Items21" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="comboBox2.Items22" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="comboBox2.Items23" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="comboBox2.Items24" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="comboBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 23</value>
+  </data>
+  <data name="comboBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 24</value>
+  </data>
+  <data name="comboBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="comboBox2.Text" xml:space="preserve">
+    <value>02</value>
+  </data>
+  <data name="&gt;&gt;comboBox2.Name" xml:space="preserve">
+    <value>comboBox2</value>
+  </data>
+  <data name="&gt;&gt;comboBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox2.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;comboBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 26</value>
+  </data>
+  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 17</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>No. Positioning point</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dataGridView2.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="dataGridView2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Disable</value>
+  </data>
+  <data name="dataGridView2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 48</value>
+  </data>
+  <data name="dataGridView2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="dataGridView2.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="dataGridView2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>403, 615</value>
+  </data>
+  <data name="dataGridView2.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;dataGridView2.Name" xml:space="preserve">
+    <value>dataGridView2</value>
+  </data>
+  <data name="&gt;&gt;dataGridView2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView2.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;dataGridView2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>308, 16</value>
+  </data>
+  <data name="labelStatus.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="labelStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 31</value>
+  </data>
+  <data name="labelStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="labelStatus.Text" xml:space="preserve">
+    <value>Not executed</value>
+  </data>
+  <data name="labelStatus.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;labelStatus.Name" xml:space="preserve">
+    <value>labelStatus</value>
+  </data>
+  <data name="&gt;&gt;labelStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelStatus.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;labelStatus.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>472, 12</value>
+  </data>
+  <data name="groupBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="groupBox3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>420, 673</value>
+  </data>
+  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Continuous operation</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="dataGridView3.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="dataGridView3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 48</value>
+  </data>
+  <data name="dataGridView3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="dataGridView3.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="dataGridView3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>490, 615</value>
+  </data>
+  <data name="dataGridView3.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;dataGridView3.Name" xml:space="preserve">
+    <value>dataGridView3</value>
+  </data>
+  <data name="&gt;&gt;dataGridView3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView3.Parent" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;dataGridView3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>896, 12</value>
+  </data>
+  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>503, 673</value>
+  </data>
+  <data name="groupBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="groupBox5.Text" xml:space="preserve">
+    <value>Axes Monitor</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Name" xml:space="preserve">
+    <value>groupBox5</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 655</value>
+  </data>
+  <data name="buttonClose.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="buttonClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 30</value>
+  </data>
+  <data name="buttonClose.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="buttonClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="&gt;&gt;buttonClose.Name" xml:space="preserve">
+    <value>buttonClose</value>
+  </data>
+  <data name="&gt;&gt;buttonClose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonClose.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonClose.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1404, 699</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        H+4AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>MEVN - Motion Software SWM-G Application - Sync Motion Control</value>
+  </data>
+  <data name="&gt;&gt;SyncAxes.Name" xml:space="preserve">
+    <value>SyncAxes</value>
+  </data>
+  <data name="&gt;&gt;SyncAxes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column1.Name" xml:space="preserve">
+    <value>Column1</value>
+  </data>
+  <data name="&gt;&gt;Column1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column2.Name" xml:space="preserve">
+    <value>Column2</value>
+  </data>
+  <data name="&gt;&gt;Column2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column3.Name" xml:space="preserve">
+    <value>Column3</value>
+  </data>
+  <data name="&gt;&gt;Column3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timerMonitor.Name" xml:space="preserve">
+    <value>timerMonitor</value>
+  </data>
+  <data name="&gt;&gt;timerMonitor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormSyncMotionControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

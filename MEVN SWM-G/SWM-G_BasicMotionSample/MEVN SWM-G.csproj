@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>BasicMotionSample</RootNamespace>
     <AssemblyName>SWM-G_BasicMotionSample</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -55,6 +55,9 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.6.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
     <Reference Include="CCLinkApi_CLRLib">
       <HintPath Condition="'$(PlatformTarget)' == 'x64'">$(SWM-G)\Lib\CCLinkApi_CLRLib.dll</HintPath>
       <HintPath Condition="'$(PlatformTarget)' == 'x86'">$(SWM-G)\Lib\x86\CCLinkApi_CLRLib.dll</HintPath>
@@ -63,12 +66,61 @@
       <HintPath Condition="'$(PlatformTarget)' == 'x64'">$(SWM-G)\Lib\CoreMotionApi_CLRLib.dll</HintPath>
       <HintPath Condition="'$(PlatformTarget)' == 'x86'">$(SWM-G)\Lib\x86\CoreMotionApi_CLRLib.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.7, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.9.0.7\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.HashCode.6.0.0\lib\netstandard2.0\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.9.0.7\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.9.0.7\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Opc.Ua.Client, Version=1.5.376.0, Culture=neutral, PublicKeyToken=bfa7a73c5cf4b6e8, processorArchitecture=MSIL">
+      <HintPath>..\packages\OPCFoundation.NetStandard.Opc.Ua.Client.1.5.376.244\lib\netstandard2.0\Opc.Ua.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Opc.Ua.Configuration, Version=1.5.376.0, Culture=neutral, PublicKeyToken=bfa7a73c5cf4b6e8, processorArchitecture=MSIL">
+      <HintPath>..\packages\OPCFoundation.NetStandard.Opc.Ua.Configuration.1.5.376.244\lib\netstandard2.0\Opc.Ua.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Opc.Ua.Core, Version=1.5.376.0, Culture=neutral, PublicKeyToken=bfa7a73c5cf4b6e8, processorArchitecture=MSIL">
+      <HintPath>..\packages\OPCFoundation.NetStandard.Opc.Ua.Core.1.5.376.244\lib\netstandard2.0\Opc.Ua.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Opc.Ua.Security.Certificates, Version=1.5.376.0, Culture=neutral, PublicKeyToken=bfa7a73c5cf4b6e8, processorArchitecture=MSIL">
+      <HintPath>..\packages\OPCFoundation.NetStandard.Opc.Ua.Security.Certificates.1.5.376.244\lib\netstandard2.0\Opc.Ua.Security.Certificates.dll</HintPath>
+    </Reference>
     <Reference Include="SSCApi_CLRLib">
       <HintPath Condition="'$(PlatformTarget)' == 'x64'">$(SWM-G)\Lib\SSCApi_CLRLib.dll</HintPath>
       <HintPath Condition="'$(PlatformTarget)' == 'x86'">$(SWM-G)\Lib\x86\SSCApi_CLRLib.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.9.0.7\lib\netstandard2.0\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Formats.Asn1, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Formats.Asn1.9.0.7\lib\netstandard2.0\System.Formats.Asn1.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -79,11 +131,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormMultiMotionControl.cs">
+    <Compile Include="FormMelsoftGEMINIControl.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMultiMotionControl.Designer.cs">
-      <DependentUpon>FormMultiMotionControl.cs</DependentUpon>
+    <Compile Include="FormMelsoftGEMINIControl.Designer.cs">
+      <DependentUpon>FormMelsoftGEMINIControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMultiMotionCtrl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMultiMotionCtrl.Designer.cs">
+      <DependentUpon>FormMultiMotionCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlarmMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlarmMonitor.Designer.cs">
+      <DependentUpon>FormAlarmMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSyncMotionControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSyncMotionControl.Designer.cs">
+      <DependentUpon>FormSyncMotionControl.cs</DependentUpon>
     </Compile>
     <Compile Include="FormIOMonitor.cs">
       <SubType>Form</SubType>
@@ -141,6 +211,12 @@
     <Compile Include="SSCApiSdoControl.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormMelsoftGEMINIControl.resx">
+      <DependentUpon>FormMelsoftGEMINIControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlarmMonitor.resx">
+      <DependentUpon>FormAlarmMonitor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormIOMonitor.resx">
       <DependentUpon>FormIOMonitor.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,8 +231,11 @@
     <EmbeddedResource Include="FormMotionControl.resx">
       <DependentUpon>FormMotionControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMultiMotionControl.resx">
-      <DependentUpon>FormMultiMotionControl.cs</DependentUpon>
+    <EmbeddedResource Include="FormMultiMotionCtrl.resx">
+      <DependentUpon>FormMultiMotionCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSyncMotionControl.resx">
+      <DependentUpon>FormSyncMotionControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSdoReadWrite.resx">
       <DependentUpon>FormSdoReadWrite.cs</DependentUpon>
@@ -172,6 +251,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

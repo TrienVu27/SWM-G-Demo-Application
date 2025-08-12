@@ -349,5 +349,10 @@ namespace BasicMotionSample
             sscApiMotionCtrl = new SSCApiControl();
             return (sscApiMotionCtrl != null);
         }
+
+        private void buttonJogP_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
