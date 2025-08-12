@@ -13,10 +13,8 @@ namespace BasicMotionSample
     public partial class FormAlarmMonitor : Form
     {
         private const int MaxAxiShow = 128;
-        private bool bEnableUpdate = true;
 
         private SSCApiAxesMonitor sscApiAxesMonitor = null;     //SSCApiAxesMonitor class
-        private static int formCount = 0;                       //Number of display forms.
         private SSCApiControl sscApiMotionCtrl = null;  //SSCApiControl class\
 
         static SSCApi sscLib = new SSCApi();

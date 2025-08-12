@@ -11,6 +11,9 @@ using Opc.Ua;
 using Opc.Ua.Client;
 using Opc.Ua.Configuration;
 using System.Threading.Tasks;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
+using System.Threading;
 
 namespace BasicMotionSample
 {
@@ -37,9 +40,24 @@ namespace BasicMotionSample
         WriteValue Ctrl_Y_Axis = new WriteValue();
         WriteValue bModeCtrl = new WriteValue();
 
+        /// <Stream>
+        [DllImport("user32.dll")]
+        private static extern IntPtr SetParent(IntPtr hWndChild, IntPtr hWndNewParent);
+
+        [DllImport("user32.dll")]
+        private static extern bool MoveWindow(IntPtr hWnd, int X, int Y, int nWidth, int nHeight, bool bRepaint);
+
+        [DllImport("user32.dll")]
+        private static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
+
+        private Process vcProcess;
+
+
         public FormMelsofGEMINIControl()
         {
             InitializeComponent();
+            this.Load += FormMelsofGEMINIControl_Load;
+            this.Resize += FormMelsofGEMINIControl_Resize;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -93,6 +111,7 @@ namespace BasicMotionSample
             
         }
 
+        [Obsolete]
         private void FormMelsofGEMINIControl_Load(object sender, EventArgs e)
         {
             radioButtonMonitor.Checked = true;
@@ -117,6 +136,30 @@ namespace BasicMotionSample
                     Close();
                 }
             }
+            // Khởi động Visual Components Experience
+            vcProcess = Process.Start(@"C:\Program Files\Visual Components\Visual Components Experience\VisualComponents.Experience.exe");
+
+            //vcProcess.WaitForInputIdle(); // Chờ app load
+            //Thread.Sleep(8000); // Đợi ứng dụng mở
+            int retry = 0;
+            while (vcProcess.MainWindowHandle == IntPtr.Zero && retry < 500)
+            {
+                Thread.Sleep(10);
+                vcProcess.Refresh(); // Cập nhật thông tin process
+                retry++;
+            }
+
+            IntPtr appWin = vcProcess.MainWindowHandle;
+            if (appWin != IntPtr.Zero)
+            {
+                SetParent(appWin, panel1.Handle); // panel1 là Panel trong WinForms
+                ShowWindow(appWin, 3); // SW_MAXIMIZE
+                ResizeEmbeddedApp();
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy cửa sổ VC Experience!");
+            }
         }
 
         private bool CreateSSCApiObject()
@@ -132,15 +175,12 @@ namespace BasicMotionSample
             buttonSrvON.BackColor = !bSvOn ? Color.Green : Color.White;
             sscApiMotionCtrl.ServoOn(0, !bSvOn);
             sscApiMotionCtrl.ServoOn(1, !bSvOn);
-
         }
 
         private void buttonHome_Click(object sender, EventArgs e)
         {
             bool bHome0 = sscApiMotionCtrl.GetServoOnState(0) ? sscApiMotionCtrl.Home(0) : false;
-            bool bHome1 = sscApiMotionCtrl.GetServoOnState(1) ? sscApiMotionCtrl.Home(1) : false;
-            
-            
+            bool bHome1 = sscApiMotionCtrl.GetServoOnState(1) ? sscApiMotionCtrl.Home(1) : false;  
         }
 
         private void buttonStart_Click(object sender, EventArgs e)
@@ -148,6 +188,7 @@ namespace BasicMotionSample
             bStart = !bStart;
         }
 
+        [Obsolete]
         private void OPCUAInitandHandle()
         {
             // Bước 1: Tạo cấu hình ứng dụng
@@ -174,6 +215,7 @@ namespace BasicMotionSample
             };
          
             // Bước 3: Kết nối đến server
+            //var selectedEndpoint = CoreClientUtils.SelectEndpoint(serverUrl, useSecurity: false);
             var selectedEndpoint = CoreClientUtils.SelectEndpoint(serverUrl, useSecurity: false);
             var endpointConfig = EndpointConfiguration.Create(config);
             var endpoint = new ConfiguredEndpoint(null, selectedEndpoint, endpointConfig);
@@ -235,8 +277,6 @@ namespace BasicMotionSample
             if (sscApiAxesMonitor.UpdateAxesStatus())
             {
                 CoreMotionAxisStatus[] axisStatus = sscApiAxesMonitor.GetAxesStatus();
-                //textBoxXActual.Text = !radioButtonControl.Checked ? Convert.ToInt32(Monitor_X_Axis.Value).ToString() : Convert.ToInt32(axisStatus[0].ActualPos/100).ToString();
-                //textBoxYActual.Text = !radioButtonControl.Checked ? Convert.ToInt32(Monitor_Y_Axis.Value).ToString() : Convert.ToInt32(axisStatus[1].ActualPos/100).ToString();
                 textBoxXActual.Text = Convert.ToInt32(axisStatus[0].ActualPos / 100).ToString();
                 textBoxYActual.Text = Convert.ToInt32(axisStatus[1].ActualPos / 100).ToString();
                 buttonSrvON.BackColor = axisStatus[0].ServoOn && axisStatus[1].ServoOn ? Color.Green : Color.White;
@@ -275,6 +315,20 @@ namespace BasicMotionSample
         private void buttonMonitor_Click(object sender, EventArgs e)
         {
             bMoinitor = !bMoinitor;
+        }
+
+        ////////////////////Streaming//////////////////////////////
+        private void ResizeEmbeddedApp()
+        {
+            if (vcProcess != null && vcProcess.MainWindowHandle != IntPtr.Zero)
+            {
+                MoveWindow(vcProcess.MainWindowHandle, 0, 0, panel1.Width, panel1.Height, true);
+            }
+        }
+
+        private void FormMelsofGEMINIControl_Resize(object sender, EventArgs e)
+        {
+            ResizeEmbeddedApp();
         }
     }
 }

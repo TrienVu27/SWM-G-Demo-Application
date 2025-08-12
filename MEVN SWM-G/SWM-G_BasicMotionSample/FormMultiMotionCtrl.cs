@@ -15,10 +15,8 @@ namespace BasicMotionSample
         private const int MaxAxiShow = 10;
         private int AxesGroupSelected = 0;
         private bool bEnableUpdate = true;
-        private  bool bAbsRelMov = false;
 
         private SSCApiAxesMonitor sscApiAxesMonitor = null;     //SSCApiAxesMonitor class
-        private static int formCount = 0;                       //Number of display forms.
         private SSCApiControl sscApiMotionCtrl = null;  //SSCApiControl class
 
         public FormMultiMotionCtrl()
