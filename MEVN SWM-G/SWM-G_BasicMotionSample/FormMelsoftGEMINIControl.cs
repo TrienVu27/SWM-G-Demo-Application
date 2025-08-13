@@ -127,12 +127,11 @@ namespace BasicMotionSample
                 {
                     //-------------------------------------------------
                     //Initial controls.
-                    timer1.Enabled = true;
                     sscLib.CreateDevice("C:\\Program Files\\MotionSoftware\\SWM-G\\",
                                  DeviceType.DeviceTypeNormal,
                                  0xFFFFFFFF);
-                    OPCUAInitandHandle();
-                    timer1.Enabled = true;
+                    //OPCUAInitandHandle();
+                    //timer1.Enabled = true;
                 }
                 else
                 {
@@ -193,14 +192,21 @@ namespace BasicMotionSample
                 ApplicationType = ApplicationType.Client,
                 ApplicationConfiguration = config
             };
-         
-            // Bước 3: Kết nối đến server
-            //var selectedEndpoint = CoreClientUtils.SelectEndpoint(serverUrl, useSecurity: false);
-            var selectedEndpoint = CoreClientUtils.SelectEndpoint(serverUrl, useSecurity: false);
-            var endpointConfig = EndpointConfiguration.Create(config);
-            var endpoint = new ConfiguredEndpoint(null, selectedEndpoint, endpointConfig);
 
-            session = Session.Create(config, endpoint, false, "MySession", 60000, null, null).Result;
+            try
+            {
+                // Bước 3: Kết nối đến server
+                var selectedEndpoint = CoreClientUtils.SelectEndpoint(serverUrl, useSecurity: false);
+                var endpointConfig = EndpointConfiguration.Create(config);
+                var endpoint = new ConfiguredEndpoint(null, selectedEndpoint, endpointConfig);
+                // Tạo task kết nối
+                session = Session.Create(config, endpoint, false, "MySession", 60000, null, null).Result;
+                timer1.Enabled = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("❌ Lỗi khi kết nối: " + ex.Message);
+            }
         }
 
         private void OPCUAUpdateDevices()
@@ -345,6 +351,43 @@ namespace BasicMotionSample
                 RemoveWindowBorders(vcHandle);
                 bStartVC = true;
             }    
+        }
+
+        private void buttonOPCConnect_Click(object sender, EventArgs e)
+        {
+            OPCUAInitandHandle();
+        }
+
+        private void textBoxXTarget_TextChanged(object sender, EventArgs e)
+        {
+            bool bRet;
+            bRet = double.TryParse(textBoxXTarget.Text, out double X_target);
+            if(!bRet)
+            {
+                MessageBox.Show("Vui lòng nhập giá trị số! Xin nhập lại....");
+                textBoxXTarget.Text = "000";
+            }    
+            else if (X_target > 900  || X_target < 0)
+            {
+                MessageBox.Show("Vui lòng nhập giá trị số từ 000 - 900! Xin nhập lại....");
+                textBoxXTarget.Text = "000";
+            }    
+        }
+
+        private void textBoxYTarget_TextChanged(object sender, EventArgs e)
+        {
+            bool bRet;
+            bRet = double.TryParse(textBoxYTarget.Text, out double Y_target);
+            if (!bRet)
+            {
+                MessageBox.Show("Vui lòng nhập giá trị số! Xin nhập lại....");
+                textBoxYTarget.Text = "000";
+            }
+            else if (Y_target > 900 || Y_target < 0)
+            {
+                MessageBox.Show("Vui lòng nhập giá trị số từ 000 - 900! Xin nhập lại....");
+                textBoxYTarget.Text = "000";
+            }
         }
     }
 }

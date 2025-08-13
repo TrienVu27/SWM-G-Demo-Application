@@ -58,6 +58,7 @@ namespace BasicMotionSample
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonStartVC = new System.Windows.Forms.Button();
+            this.buttonOPCConnect = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -149,6 +150,7 @@ namespace BasicMotionSample
             this.textBoxYTarget.TabIndex = 2;
             this.textBoxYTarget.Text = "000";
             this.textBoxYTarget.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxYTarget.TextChanged += new System.EventHandler(this.textBoxYTarget_TextChanged);
             // 
             // label1
             // 
@@ -168,6 +170,7 @@ namespace BasicMotionSample
             this.textBoxXTarget.TabIndex = 0;
             this.textBoxXTarget.Text = "000";
             this.textBoxXTarget.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxXTarget.TextChanged += new System.EventHandler(this.textBoxXTarget_TextChanged);
             // 
             // groupBox2
             // 
@@ -345,11 +348,22 @@ namespace BasicMotionSample
             this.buttonStartVC.UseVisualStyleBackColor = true;
             this.buttonStartVC.Click += new System.EventHandler(this.buttonStartVC_Click);
             // 
+            // buttonOPCConnect
+            // 
+            this.buttonOPCConnect.Location = new System.Drawing.Point(60, 239);
+            this.buttonOPCConnect.Name = "buttonOPCConnect";
+            this.buttonOPCConnect.Size = new System.Drawing.Size(92, 23);
+            this.buttonOPCConnect.TabIndex = 11;
+            this.buttonOPCConnect.Text = "OPC Connect";
+            this.buttonOPCConnect.UseVisualStyleBackColor = true;
+            this.buttonOPCConnect.Click += new System.EventHandler(this.buttonOPCConnect_Click);
+            // 
             // FormMelsofGEMINIControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1711, 961);
+            this.Controls.Add(this.buttonOPCConnect);
             this.Controls.Add(this.buttonStartVC);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.labelGEMINICConnected);
@@ -407,5 +421,6 @@ namespace BasicMotionSample
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button buttonOPCConnect;
     }
 }
