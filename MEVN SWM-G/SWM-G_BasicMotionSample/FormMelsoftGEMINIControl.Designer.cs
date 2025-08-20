@@ -333,7 +333,7 @@ namespace BasicMotionSample
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(319, 9);
+            this.panel1.Location = new System.Drawing.Point(319, 6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1388, 948);
             this.panel1.TabIndex = 9;
@@ -344,7 +344,7 @@ namespace BasicMotionSample
             this.buttonStartVC.Name = "buttonStartVC";
             this.buttonStartVC.Size = new System.Drawing.Size(75, 23);
             this.buttonStartVC.TabIndex = 10;
-            this.buttonStartVC.Text = "Start VC";
+            this.buttonStartVC.Text = "Start VCE";
             this.buttonStartVC.UseVisualStyleBackColor = true;
             this.buttonStartVC.Click += new System.EventHandler(this.buttonStartVC_Click);
             // 

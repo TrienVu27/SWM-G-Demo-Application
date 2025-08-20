@@ -24,6 +24,8 @@ namespace BasicMotionSample
 
         static SSCApi sscLib = new SSCApi();
         private CoreMotion sscLib_cm = new CoreMotion(sscLib);
+        Motion.LinearIntplCommand linearIntplCommand = new Motion.LinearIntplCommand();
+
         private bool bStart = false;
         private bool bMoinitor = true;
 
@@ -281,11 +283,28 @@ namespace BasicMotionSample
             if (
                 double.TryParse(textBoxXTarget.Text, out X_target) &&
                 double.TryParse(textBoxYTarget.Text, out Y_target)&&
-                radioButtonControl.Checked && bStart
+                radioButtonControl.Checked && 
+                bStart &&
+                axisStatus[0].ServoOn &&
+                axisStatus[1].ServoOn
             )
             {
-                bRet = axisStatus[0].ServoOn ? sscApiMotionCtrl.StartPos(0, X_target*100+1, velocity, accDcc): false;
-                bRet = axisStatus[1].ServoOn ? sscApiMotionCtrl.StartPos(1, Y_target*100+1, velocity, accDcc) : false;
+                //chạy nội suy
+                //bRet = axisStatus[0].ServoOn ? sscApiMotionCtrl.StartPos(0, X_target*100+1, velocity, accDcc): false;
+                //bRet = axisStatus[1].ServoOn ? sscApiMotionCtrl.StartPos(1, Y_target*100+1, velocity, accDcc) : false;
+                linearIntplCommand.AxisCount = 2;
+                linearIntplCommand.Axis[0] = 0;
+                linearIntplCommand.Axis[1] = 1;
+                linearIntplCommand.Target[0] = X_target * 100;
+                linearIntplCommand.Target[1] = Y_target * 100;
+
+                linearIntplCommand.Profile.Type = ProfileType.Trapezoidal;
+                linearIntplCommand.Profile.Velocity = velocity;
+                linearIntplCommand.Profile.Acc = accDcc;
+                linearIntplCommand.Profile.Dec = 1000000;
+
+                sscLib_cm.Motion.StartLinearIntplPos(linearIntplCommand);
+                bStart = false;
             }
             if (
                 double.TryParse(Convert.ToInt32(Monitor_X_Axis.Value).ToString(), out X_target) &&
