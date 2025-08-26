@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using SSCApiCLR;
 using Opc.Ua;
 using Opc.Ua.Client;
 using Opc.Ua.Configuration;
-using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Threading;
