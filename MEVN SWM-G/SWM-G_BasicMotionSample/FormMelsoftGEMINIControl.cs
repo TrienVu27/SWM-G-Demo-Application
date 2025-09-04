@@ -8,6 +8,7 @@ using Opc.Ua.Configuration;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace BasicMotionSample
 {
@@ -22,6 +23,7 @@ namespace BasicMotionSample
 
         private bool bStart = false;
         private bool bMoinitor = true;
+        private int runStep = 1;
 
         private string serverUrl = "opc.tcp://localhost:52250"; //OPC UA server link
         private ApplicationConfiguration config = null;
@@ -85,8 +87,8 @@ namespace BasicMotionSample
             textBoxYTarget.Enabled = !bStart; 
 
             OPCUAUpdateDevices();
-            AxesUpdate();
             AxesCotrol();
+            AxesUpdate();
 
             timer1.Enabled = true;
         }
@@ -279,8 +281,8 @@ namespace BasicMotionSample
                 double.TryParse(textBoxYTarget.Text, out Y_target)&&
                 radioButtonControl.Checked && 
                 bStart &&
-                axisStatus[0].ServoOn &&
-                axisStatus[1].ServoOn
+                axisStatus[0].ServoOn && axisStatus[0].OpState == OperationState.Idle &&
+                axisStatus[1].ServoOn && axisStatus[1].OpState == OperationState.Idle
             )
             {
                 //chạy nội suy
@@ -289,17 +291,28 @@ namespace BasicMotionSample
                 linearIntplCommand.AxisCount = 2;
                 linearIntplCommand.Axis[0] = 0;
                 linearIntplCommand.Axis[1] = 1;
-                linearIntplCommand.Target[0] = X_target * 100;
-                linearIntplCommand.Target[1] = Y_target * 100;
 
                 linearIntplCommand.Profile.Type = ProfileType.Trapezoidal;
                 linearIntplCommand.Profile.Velocity = velocity;
                 linearIntplCommand.Profile.Acc = accDcc;
                 linearIntplCommand.Profile.Dec = 1000000;
 
+                if (runStep == 1)
+                {
+                    linearIntplCommand.Target[0] = X_target * 100;
+                    linearIntplCommand.Target[1] = Y_target * 100;
+                    runStep = axisStatus[0].MotionComplete && axisStatus[1].MotionComplete ? 2 : 1;
+                }
+                else
+                {
+                    linearIntplCommand.Target[0] = 0 * 100;
+                    linearIntplCommand.Target[1] = 0 * 100;
+                    runStep = axisStatus[0].MotionComplete && axisStatus[1].MotionComplete ? 1 : 2;
+                }    
+
                 sscLib_cm.Motion.StartLinearIntplPos(linearIntplCommand);
-                bStart = false;
             }
+
             if (
                 double.TryParse(Convert.ToInt32(Monitor_X_Axis.Value).ToString(), out X_target) &&
                 double.TryParse(Convert.ToInt32(Monitor_Y_Axis.Value).ToString(), out Y_target) &&
