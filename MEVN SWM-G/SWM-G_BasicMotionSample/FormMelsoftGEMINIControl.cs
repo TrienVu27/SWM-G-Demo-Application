@@ -23,6 +23,7 @@ namespace BasicMotionSample
 
         private bool bStart = false;
         private bool bMoinitor = true;
+        private bool bRepeat = true;
         private int runStep = 1;
 
         private string serverUrl = "opc.tcp://localhost:52250"; //OPC UA server link
@@ -301,13 +302,13 @@ namespace BasicMotionSample
                 {
                     linearIntplCommand.Target[0] = X_target * 100;
                     linearIntplCommand.Target[1] = Y_target * 100;
-                    runStep = axisStatus[0].MotionComplete && axisStatus[1].MotionComplete ? 2 : 1;
+                    runStep = axisStatus[0].MotionComplete && axisStatus[1].MotionComplete && bRepeat ? 2 : 1;
                 }
                 else
                 {
                     linearIntplCommand.Target[0] = 0 * 100;
                     linearIntplCommand.Target[1] = 0 * 100;
-                    runStep = axisStatus[0].MotionComplete && axisStatus[1].MotionComplete ? 1 : 2;
+                    runStep = axisStatus[0].MotionComplete && axisStatus[1].MotionComplete && bRepeat ? 1 : 2;
                 }    
 
                 sscLib_cm.Motion.StartLinearIntplPos(linearIntplCommand);
@@ -414,6 +415,11 @@ namespace BasicMotionSample
                 MessageBox.Show("Vui lòng nhập giá trị số từ 000 - 900! Xin nhập lại....");
                 textBoxYTarget.Text = "000";
             }
+        }
+
+        private void checkBoxRepeat_CheckedChanged(object sender, EventArgs e)
+        {
+            bRepeat = checkBoxRepeat.Checked;
         }
     }
 }

@@ -59,6 +59,7 @@ namespace BasicMotionSample
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonStartVC = new System.Windows.Forms.Button();
             this.buttonOPCConnect = new System.Windows.Forms.Button();
+            this.checkBoxRepeat = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -66,6 +67,7 @@ namespace BasicMotionSample
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.checkBoxRepeat);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.buttonStart);
@@ -104,7 +106,7 @@ namespace BasicMotionSample
             // 
             // buttonStart
             // 
-            this.buttonStart.Location = new System.Drawing.Point(202, 60);
+            this.buttonStart.Location = new System.Drawing.Point(158, 60);
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(75, 23);
             this.buttonStart.TabIndex = 6;
@@ -114,7 +116,7 @@ namespace BasicMotionSample
             // 
             // buttonHome
             // 
-            this.buttonHome.Location = new System.Drawing.Point(111, 60);
+            this.buttonHome.Location = new System.Drawing.Point(81, 60);
             this.buttonHome.Name = "buttonHome";
             this.buttonHome.Size = new System.Drawing.Size(75, 23);
             this.buttonHome.TabIndex = 5;
@@ -124,7 +126,7 @@ namespace BasicMotionSample
             // 
             // buttonSrvON
             // 
-            this.buttonSrvON.Location = new System.Drawing.Point(21, 60);
+            this.buttonSrvON.Location = new System.Drawing.Point(5, 60);
             this.buttonSrvON.Name = "buttonSrvON";
             this.buttonSrvON.Size = new System.Drawing.Size(75, 23);
             this.buttonSrvON.TabIndex = 4;
@@ -358,6 +360,19 @@ namespace BasicMotionSample
             this.buttonOPCConnect.UseVisualStyleBackColor = true;
             this.buttonOPCConnect.Click += new System.EventHandler(this.buttonOPCConnect_Click);
             // 
+            // checkBoxRepeat
+            // 
+            this.checkBoxRepeat.AutoSize = true;
+            this.checkBoxRepeat.Checked = true;
+            this.checkBoxRepeat.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxRepeat.Location = new System.Drawing.Point(244, 63);
+            this.checkBoxRepeat.Name = "checkBoxRepeat";
+            this.checkBoxRepeat.Size = new System.Drawing.Size(61, 17);
+            this.checkBoxRepeat.TabIndex = 15;
+            this.checkBoxRepeat.Text = "Repeat";
+            this.checkBoxRepeat.UseVisualStyleBackColor = true;
+            this.checkBoxRepeat.CheckedChanged += new System.EventHandler(this.checkBoxRepeat_CheckedChanged);
+            // 
             // FormMelsofGEMINIControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -422,5 +437,6 @@ namespace BasicMotionSample
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button buttonOPCConnect;
+        private System.Windows.Forms.CheckBox checkBoxRepeat;
     }
 }
